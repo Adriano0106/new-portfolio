@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Presentation = () => {
   return (
-    <section id="presentation-section" style={{ height: "800px" }} className="mx-auto my-10 max-w-7xl px-2 sm:px-6 lg:px-8">
+    <section id="presentation-section" style={{ height: "auto" }} className="mx-auto my-10 max-w-7xl px-2 sm:px-6 lg:px-8">
       <div className="flex justify-center">
         <Image
           src="/adriano_picture.jpg"
@@ -16,7 +16,9 @@ const Presentation = () => {
 
           <h1>Adriano Andrade da Silva</h1>
           <h3>Desenvolvedor Full Stack</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, provident. Dicta consectetur provident amet, a, quo maiores delectus culpa ipsam numquam incidunt aliquam! Eos, qui?</p>
+          <p>28 anos</p>
+          <p>Formado em Ciência da Computação</p>
+          <p>Corinthiano, fã de música e cultura POP.</p>
         </div>
       </div>
     </section>
