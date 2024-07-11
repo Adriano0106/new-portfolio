@@ -20,7 +20,7 @@ const jobs = [
   },
   {
     name: 'UOL',
-    description: ' Desenvolvimento de peças publicitárias e lógica para definir qual campanha publicitária estará apta a ser exibida com base no usuário que está acessando se comunicando com o Ad Server da companhia. Consultas de APIs que retornam JSONs para utilizar os dados retornados nas peças publicitárias. Consulta e liberação de acesso (BD Oracle) para que os usuários possam utilizar o sistema que gerencia as publicidades do UOL e sites parceiros.',
+    description: 'Desenvolvimento de peças publicitárias e lógica para definir qual campanha publicitária estará apta a ser exibida com base no usuário que está acessando se comunicando com o Ad Server da companhia. Consultas de APIs que retornam JSONs para utilizar os dados retornados nas peças publicitárias. Consulta e liberação de acesso (BD Oracle) para que os usuários possam utilizar o sistema que gerencia as publicidades do UOL e sites parceiros.',
     role: 'Desenvolvedor Full Stack',
     imageUrl:
       '/logo-uol.png',
@@ -35,23 +35,6 @@ const jobs = [
       "HTML",
     ]
   }
-  // ,{
-  //   name: 'UOL',
-  //   description: 'michael.foster@example.com',
-  //   role: 'Desenvolvedor Full Stack',
-  //   imageUrl:
-  //     '/logo-uol.png',
-  //   time: '2023-',
-  //   lastSeenDateTime: '2023-01-23T13:23Z',
-  //   techs: [
-  //     "Ruby on Rails",
-  //     "JavaScript",
-  //     "PostgreSQL",
-  //     "Bootstrap",
-  //     "CSS",
-  //     "HTML",
-  //   ]
-  // },
 ]
 
 const Experience = () => {
@@ -60,7 +43,7 @@ const Experience = () => {
       <h1>Experiência</h1>
 
       <ul role="list" className="divide-y divide-gray-100">
-        {jobs.map((job) => (
+        {jobs.reverse().map((job) => (
           <li key={job.description} className="flex justify-between gap-x-6 py-5">
             <div className="flex min-w-0 gap-x-4">
               <Image
