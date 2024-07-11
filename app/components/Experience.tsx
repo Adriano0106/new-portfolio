@@ -38,12 +38,13 @@ const jobs = [
 ]
 
 const Experience = () => {
+  const reversedJobs = [...jobs].reverse();
   return (
     <section id="experience-section" style={{ height: "auto" }} className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <h1>Experiência</h1>
 
       <ul role="list" className="divide-y divide-gray-100">
-        {jobs.reverse().map((job) => (
+        {reversedJobs.map((job) => (
           <li key={job.description} className="flex justify-between gap-x-6 py-5">
             <div className="flex min-w-0 gap-x-4">
               <Image
