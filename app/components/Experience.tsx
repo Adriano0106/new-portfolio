@@ -40,7 +40,7 @@ const jobs = [
 const Experience = () => {
   const reversedJobs = [...jobs].reverse();
   return (
-    <section id="experience-section" style={{ height: "auto" }} className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
+    <section id="experience-section" style={{ height: "auto" }} className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
       <h1>Experiência</h1>
 
       <ul role="list" className="divide-y divide-gray-100">

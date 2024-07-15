@@ -25,7 +25,7 @@ const Presentation = () => {
   const age = calculateAge(info.birthDate)
 
   return (
-    <section id="presentation-section" style={{ height: "auto" }} className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
+    <section id="presentation-section" style={{ height: "auto" }} className="scroll-pt-navbar pt-16">
       <div className="flex justify-center">
         <Image
           src="/adriano_picture.jpg"

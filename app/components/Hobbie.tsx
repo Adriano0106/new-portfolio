@@ -15,7 +15,7 @@ const my_hobbies = [
 
 const Hobbies = () => {
   return (
-    <section id="hobbies-section" style={{ height: "800px", width: "inherit" }} className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
+    <section id="hobbies-section" style={{ height: "800px", width: "inherit" }} className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
       <h1>Hobbies</h1>
       <div>
       {my_hobbies.map((hobbie) => (
