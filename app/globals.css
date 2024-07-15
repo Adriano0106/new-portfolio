@@ -24,3 +24,27 @@ h3 {
 .scroll-pt-navbar {
   scroll-padding-top: 4rem;
 }
+
+section#skills-section, section#hobbies-section {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .profile__picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}

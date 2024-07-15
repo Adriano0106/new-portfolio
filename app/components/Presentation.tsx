@@ -36,7 +36,6 @@ const Presentation = () => {
           style={{ borderRadius: "50%" }}
         />
         <div className="profile__info">
-
           <h1>{info.name}</h1>
           <h3>{info.job}</h3>
           <p>{age} anos</p>
