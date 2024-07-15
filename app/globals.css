@@ -20,3 +20,7 @@ h3 {
   margin-left: 20px;
   max-width: 600px;
 }
+
+.scroll-pt-navbar {
+  scroll-padding-top: 4rem;
+}
