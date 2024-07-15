@@ -3,6 +3,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navigation = [
   // { name: '', href: '#first-section', current: true },
@@ -36,14 +37,26 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <Link
+                  {/* <Link
                     href="/"
                   >
-                    <img
+                    <Image
+                      // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                      width={37}
+                      height={32}
+                      alt="Adriano Andrade"
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                      alt="Your Company"
                     />
+                  </Link> */}
+
+                  <Link
+                    key="home"
+                    href="/"
+                    // className='bg-gray-900 text-white'
+                    className='text-white'
+                    aria-current='page'
+                  >
+                    Início
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
