@@ -10,6 +10,8 @@ const navigation = [
   { name: 'Apresentação', href: '#presentation-section', current: false },
   { name: 'Experiência', href: '#experience-section', current: false },
   { name: 'Skills', href: '#skills-section', current: false },
+  { name: 'Hobbies', href: '#hobbies-section', current: false },
+  { name: 'Projetos', href: '#projects-section', current: false },
 ]
 
 function classNames(...classes: string[]) {
