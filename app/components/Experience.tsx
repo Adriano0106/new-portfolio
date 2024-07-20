@@ -3,7 +3,7 @@ import Image from "next/image";
 const jobs = [
   {
     name: 'Gigaservices',
-    description: 'Atendimento ao cliente \n, desenvolvimento de layout nas Views e novas funcionalidades nas classes dos projetos feitos em Ruby on Rails.',
+    description: 'Desenvolvimento de layout dos projetos feitos em Ruby on Rails.',
     role: 'Trainee',
     imageUrl:
       '/gigaservices-logo.png',
@@ -11,8 +11,10 @@ const jobs = [
     lastSeenDateTime: '2023-01-23T13:23Z',
     techs: [
       "Ruby on Rails",
+      "Ruby",
       "JavaScript",
       "PostgreSQL",
+      "Git",
       "Bootstrap",
       "CSS",
       "HTML",
@@ -20,17 +22,22 @@ const jobs = [
   },
   {
     name: 'UOL',
-    description: 'Desenvolvimento de peças publicitárias e lógica para definir qual campanha publicitária estará apta a ser exibida com base no usuário que está acessando se comunicando com o Ad Server da companhia. Consultas de APIs que retornam JSONs para utilizar os dados retornados nas peças publicitárias. Consulta e liberação de acesso (BD Oracle) para que os usuários possam utilizar o sistema que gerencia as publicidades do UOL e sites parceiros.',
+    description: 'Criação e consultas de APIs para serem utilizadas nas peças publicitárias e em serviços internos. \n Desenvolvimento de peças publicitárias. \n Lógica para definir qual campanha publicitária estará apta a ser exibida com base no usuário que está acessando enviando parâmetros para o AdServer que será utilizado. \n  Gerenciamento de liberação de acesso via Oracle de sistemas da empresa.',
     role: 'Desenvolvedor Full Stack',
     imageUrl:
       '/logo-uol.png',
     time: '2020 - atualmente',
     lastSeenDateTime: '2023-01-23T13:23Z',
     techs: [
-      "Ruby on Rails",
       "JavaScript",
-      "PostgreSQL",
+      "TypeScript",
+      "ReactJS",
+      "NextJS",
+      "NodeJs",
+      "Git",
+      "Oracle",
       "Bootstrap",
+      "Sass (Scss)",
       "CSS",
       "HTML",
     ]
@@ -57,7 +64,7 @@ const Experience = () => {
               />
               <div className="min-w-0 flex-auto">
                 <p className="text-sm font-semibold leading-6 text-gray-900">{job.name}</p>
-                <p className="mt-1 text-sm leading-5 text-gray-500">{job.description}</p>
+                <p className="mt-1 text-sm leading-5 text-gray-500 display-linebreak">{job.description}</p>
                 <br />
 
                 <p className="text-sm font-semibold leading-6 text-gray-900">Tecnologias Utilizadas</p>

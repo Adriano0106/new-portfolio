@@ -29,6 +29,10 @@ section#skills-section, section#hobbies-section {
   margin: 0;
 }
 
+.display-linebreak {
+  white-space: pre-line;
+}
+
 @media (max-width: 640px) {
   .profile__picture {
     width: 100px;
