@@ -8,7 +8,7 @@ const my_hobbies = [
 
 const Hobbies = () => {
   return (
-    <section id="hobbies-section" style={{ height: "800px", width: "inherit" }} className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
+    <section id="hobbies-section" style={{ width: "inherit" }} className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
       <h1>Hobbies</h1>
       <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
         {my_hobbies.map((hobbie, index) => (

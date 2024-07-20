@@ -8,7 +8,7 @@ export default function Home() {
     <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
       <Presentation />
       <Experience />
-      <div className="w-full flex flex-col-reverse md:flex-row">
+      <div className="w-full flex flex-col-reverse md:flex-row pb-1">
         <Skills />
         <Hobbies />
       </div>

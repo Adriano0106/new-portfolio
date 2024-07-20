@@ -16,7 +16,7 @@ const my_skills = [
 
 const Skills = () => {
   return (
-    <section id="skills-section" style={{ height: "800px", width: "inherit" }} className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
+    <section id="skills-section" style={{ width: "inherit" }} className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
       <h1>Skills</h1>
 
 

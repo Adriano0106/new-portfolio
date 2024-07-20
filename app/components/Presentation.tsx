@@ -14,7 +14,9 @@ const calculateAge = (birthDate: string): number => {
   let age = today.getFullYear() - birthDateObj.getFullYear();
   const monthDifference = today.getMonth() - birthDateObj.getMonth();
 
-  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDateObj.getDate())) {
+  if (monthDifference < 0 ||
+    (monthDifference === 0 && today.getDate() < birthDateObj.getDate())
+  ) {
     age--;
   }
 
@@ -25,7 +27,10 @@ const Presentation = () => {
   const age = calculateAge(info.birthDate)
 
   return (
-    <section id="presentation-section" style={{ height: "auto" }} className="scroll-pt-navbar pt-16">
+    <section
+      id="presentation-section"
+      style={{ height: "auto" }}
+      className="scroll-pt-navbar pt-16">
       <div className="flex justify-center">
         <Image
           src="/adriano_picture.jpg"
