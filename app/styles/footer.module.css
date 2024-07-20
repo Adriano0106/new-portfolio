@@ -1,3 +1,8 @@
 .development {
-  color: red;
+  color: gray;
+  margin-right: 0.25rem;
+}
+
+.porfolioGithub:hover {
+  text-decoration: underline;
 }

@@ -9,7 +9,7 @@ const Footer = () => {
           <p className={styles.development}>
             Desenvolvido por:
           </p>
-          <Link href="https://github.com/Adriano0106">&nbsp;Adriano Andrade da Silva &nbsp;
+          <Link href="https://github.com/Adriano0106" className={styles.porfolioGithub}>Adriano Andrade da Silva
             {/* <a className="" target="_blank">&nbsp;Adriano Andrade da Silva &nbsp;<FaGithub /></a> */}
           </Link>
         </div>

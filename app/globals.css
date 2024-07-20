@@ -29,6 +29,10 @@ h3 {
   text-decoration: underline;
 }
 
+.portfolio__grid__container {
+  margin-bottom: 2rem;
+}
+
 section#skills-section, section#hobbies-section {
   margin: 0;
 }
