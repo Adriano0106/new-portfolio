@@ -1,6 +1,7 @@
 import Experience from './components/Experience'
 import Hobbies from './components/Hobbie'
 import Presentation from './components/Presentation'
+import Projects from './components/Projects'
 import Skills from './components/Skills'
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="w-full flex flex-col-reverse md:flex-row pb-1">
         <Skills />
         <Hobbies />
+        <Projects />
       </div>
     </div>
   )

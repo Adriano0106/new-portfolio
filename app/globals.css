@@ -25,6 +25,10 @@ h3 {
   scroll-padding-top: 4rem;
 }
 
+.project__link:hover {
+  text-decoration: underline;
+}
+
 section#skills-section, section#hobbies-section {
   margin: 0;
 }
