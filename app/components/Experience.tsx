@@ -10,7 +10,7 @@ const jobs = [
     description: 'Desenvolvimento de layout dos projetos feitos em Ruby on Rails.',
     role: 'Trainee',
     imageUrl:
-      '/gigaservices-logo.png',
+      '/gigaservices-logo.jpg',
     time: '2018 - 2020',
     lastSeenDateTime: '2023-01-23T13:23Z',
     techs: [
