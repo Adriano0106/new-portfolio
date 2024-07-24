@@ -1,3 +1,7 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import useWindowSize from '../hooks/useWindowSize';
 import Image from "next/image";
 
 const jobs = [
@@ -46,13 +50,31 @@ const jobs = [
 
 const Experience = () => {
   const reversedJobs = [...jobs].reverse();
+  const size = useWindowSize();
+  const [isSmall, setIsSmall] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (size.width !== undefined && size.width <= 768) {
+      console.log(true)
+      setIsSmall(true);
+    } else {
+      console.log(false)
+      setIsSmall(false);
+    }
+  }, [size.width]);
+
+  const sharedClasses = 'flex justify-between gap-x-6 py-5';
+  const conditionalClass = isSmall ? 'flex-col-reverse' : '';
+
   return (
     <section id="experience-section" style={{ height: "auto" }} className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
       <h1>Experiência</h1>
 
       <ul role="list" className="divide-y divide-gray-100">
         {reversedJobs.map((job) => (
-          <li key={job.description} className="flex justify-between gap-x-6 py-5">
+          <li key={job.description}
+          className={`${sharedClasses} ${conditionalClass}`}
+          >
             <div className="flex min-w-0 gap-x-4">
               <Image
                 src={job.imageUrl}
@@ -73,7 +95,7 @@ const Experience = () => {
                 ))}
               </div>
             </div>
-            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col md:items-end" style={{ marginBottom: "1rem" }}>
               <p className="text-sm leading-6 text-gray-900">{job.role}</p>
               <p className="mt-1 text-xs leading-5 text-gray-500">
                 <time dateTime={job.lastSeenDateTime}>{job.time}</time>
