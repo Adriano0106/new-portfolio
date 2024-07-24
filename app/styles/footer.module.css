@@ -13,6 +13,10 @@
 
 .iconGithub {
   margin-left: 0.35rem;
+  height: 22px;
+}
+.porfolioGithub {
+  display: flex;
 }
 
 .porfolioGithub:hover {
@@ -34,7 +38,6 @@
 
   .porfolioGithub {
     font-size: 12px;
-    display: flex;
   }
 
   .iconGithub {
