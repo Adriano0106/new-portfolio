@@ -1,5 +1,6 @@
 import Link from "next/link"
 import styles from './../styles/footer.module.css'
+import { FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -9,9 +10,12 @@ const Footer = () => {
           <p className={styles.development}>
             Desenvolvido por:
           </p>
-          <Link href="https://github.com/Adriano0106" className={styles.porfolioGithub}>Adriano Andrade da Silva
-            {/* <a className="" target="_blank">&nbsp;Adriano Andrade da Silva &nbsp;<FaGithub /></a> */}
+          <Link href="https://github.com/Adriano0106"
+            className={styles.porfolioGithub}
+            target="_blank"
+          >Adriano Andrade da Silva <FaGithub className={styles.iconGithub}/>
           </Link>
+
         </div>
       </div>
     </section>

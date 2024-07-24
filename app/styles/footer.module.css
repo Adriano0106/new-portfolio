@@ -3,6 +3,10 @@
   margin-right: 0.25rem;
 }
 
+.iconGithub {
+  margin-left: 0.35rem;
+}
+
 .porfolioGithub:hover {
   text-decoration: underline;
 }
