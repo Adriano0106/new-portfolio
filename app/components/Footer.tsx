@@ -4,9 +4,9 @@ import { FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <section id="footer-section" style={{ backgroundColor: "#eee" }}>
-      <div style={{ height: "50px" }} className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-center">
-        <div className="flex text-center justify-center	" style={{ top: "15px", position: "relative" }}>
+    <section id="footer-section" className={styles.footer} style={{ backgroundColor: "#eee" }}>
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-center">
+        <div className={`flex text-center justify-center ${styles.footerCard} `}>
           <p className={styles.development}>
             Desenvolvido por:
           </p>

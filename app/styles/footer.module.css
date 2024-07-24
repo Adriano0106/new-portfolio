@@ -1,3 +1,11 @@
+.footer {
+  height: 50px;
+}
+
+.footerCard {
+  padding-top: 14px;
+}
+
 .development {
   color: gray;
   margin-right: 0.25rem;
@@ -9,4 +17,29 @@
 
 .porfolioGithub:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    height: 30px;
+  }
+
+  .footerCard {
+    padding-top: 8px;
+  }
+
+  .development {
+    font-size: 12px;
+  }
+
+  .porfolioGithub {
+    font-size: 12px;
+    display: flex;
+  }
+
+  .iconGithub {
+    margin-left: 0.35rem;
+    height: 16px;
+    width: 12px;
+  }
 }
