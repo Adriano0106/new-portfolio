@@ -4,7 +4,7 @@ const my_skills = [
   ["JavaScript", "/techs/js.png"],
   ["TypeScript", "/techs/ts.png"],
   ["ReactJS", "/techs/react.png"],
-  ["NextJS", "/techs/next.png"],
+  ["NextJS", "/techs/next.jpg"],
   ["NodeJS", "/techs/node.png"],
   ["Ruby", "/techs/ruby.png"],
   ["Ruby on Rails", "/techs/rails.png"],
