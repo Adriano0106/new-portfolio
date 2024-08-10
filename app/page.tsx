@@ -9,7 +9,7 @@ export default function Home() {
     <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
       <Presentation />
       <Experience />
-      <div className="w-full flex flex-col-reverse md:flex-row portfolio__grid__container">
+      <div className="w-full flex flex-col md:flex-row portfolio__grid__container">
         <Skills />
         <Hobbies />
         <Projects />
