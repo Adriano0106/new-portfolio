@@ -33,7 +33,7 @@ const Presentation = () => {
       className="scroll-pt-navbar pt-16">
       <div className="flex justify-center">
         <Image
-          src="/adriano_picture.jpg"
+          src="/adriano_new_picture.png"
           width={250}
           height={250}
           alt="Picture of the author"
