@@ -12,6 +12,9 @@ const my_skills = [
   ["Bootstrap", "/techs/bootstrap.png"],
   ["Sass (SCSS)", "/techs/sass.png"],
   ["CSS", "/techs/css.png"],
+  ["SQL", "/techs/sql.jpg"],
+  ["Rest API", "/techs/api_rest.jpg"],
+  ["Responsive Design", "/techs/responsive_design.jpg"]
 ]
 
 const Skills = () => {
