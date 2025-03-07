@@ -3,6 +3,7 @@ import Link from "next/link";
 const my_projects = [
   ['😎', "Portfólio", "Você está aqui"],
   ['🏎️', "Formula One Next", "https://adriano-formulaonenext.netlify.app/"],
+  ['🏎️', "Formula One Database", "https://github.com/Adriano0106/Formula-One-Database"],
 ]
 
 const Projects = () => {
