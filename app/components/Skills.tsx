@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 const my_skills = [
   ["JavaScript", "/techs/js.png"],
@@ -14,14 +14,17 @@ const my_skills = [
   ["CSS", "/techs/css.png"],
   ["SQL", "/techs/sql.jpg"],
   ["Rest API", "/techs/api_rest.jpg"],
-  ["Responsive Design", "/techs/responsive_design.jpg"]
+  ["Responsive Design", "/techs/responsive_design.jpg"],
 ]
 
 const Skills = () => {
   return (
-    <section id="skills-section" style={{ width: "inherit" }} className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
+    <section
+      id="skills-section"
+      style={{ width: "inherit" }}
+      className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar py-4"
+    >
       <h1>Skills</h1>
-
 
       {/* <div>
       {my_skills.map((skill) => (
@@ -36,7 +39,10 @@ const Skills = () => {
 
       <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
         {my_skills.map((skill, index) => (
-          <li key={index} className="flex items-center space-x-3 rtl:space-x-reverse">
+          <li
+            key={index}
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
             <span>
               <Image
                 src={skill[1]}
@@ -44,7 +50,7 @@ const Skills = () => {
                 height={20}
                 alt="Picture tecnology"
                 className="skills__picture"
-              // style={{ borderRadius: "50%" }}
+                // style={{ borderRadius: "50%" }}
               />
             </span>
             <span>{skill[0]}</span>
@@ -55,4 +61,4 @@ const Skills = () => {
   )
 }
 
-export default Skills;
+export default Skills
