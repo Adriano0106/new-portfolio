@@ -7,8 +7,14 @@ import Image from "next/image"
 const jobs = [
   {
     name: "Gigaservices",
-    description:
-      "Desenvolvimento de layout dos projetos feitos em Ruby on Rails.",
+    description: `Desenvolvimento de Interfaces com Ruby on Rails
+      Criação e manutenção de views em aplicações Ruby on Rails, aplicando JavaScript, jQuery e Bootstrap para garantir interfaces funcionais e responsivas.
+
+      Implementação de Funcionalidades e Back-End
+      Desenvolvimento de novas funcionalidades utilizando Ruby, com manipulação de dados em banco PostgreSQL e cobertura de testes com RSpec.
+
+      Atuação em Qualidade e Suporte
+      Colaboração nos testes de aplicações e no suporte direto ao cliente, contribuindo para a identificação e resolução de problemas técnicos.`,
     role: "Trainee",
     imageUrl: "/gigaservices-logo.jpg",
     time: "2018 - 2020",
@@ -26,8 +32,22 @@ const jobs = [
   },
   {
     name: "UOL",
-    description:
-      "Criação e consultas de APIs para serem utilizadas nas peças publicitárias e em serviços internos. \n Desenvolvimento de peças publicitárias. \n Lógica para definir qual campanha publicitária estará apta a ser exibida com base no usuário que está acessando enviando parâmetros para o AdServer que será utilizado. \n  Gerenciamento de liberação de acesso via Oracle de sistemas da empresa.",
+    description: `APIs
+      Desenvolvimento de APIs, com foco em fornecer dados para que os mesmos sejam utilizados por diversos sistemas e áreas da empresa.
+
+      Automação de Publicações em Plataformas de Publicidade
+      Criação de scripts para publicação e atualização em lote nas plataformas de gerenciamento de anúncios utilizadas pela equipe de Operação.
+
+      Criação de Publicidades
+      Desenvolvimento de peças publicitárias para exibição no UOL e em sites parceiros com animações CSS.
+
+      Desenvolvimento de Sites e Sistemas Internos
+      Responsável pelo desenvolvimento de sites para novas publicações.
+      Responsável pela criação do novo sistema de FAQ de diversas áreas do UOL.
+      Desenvolvimento de ferramentas de automação para importação e atualização de conteúdos em lote.
+
+      Sistema de Controle de Acesso de Usuários
+      Desenvolvimento de um sistema interno para gerenciamento de acessos, com interface intuitiva e integração com banco de dados relacional.`,
     role: "Desenvolvedor Full Stack",
     imageUrl: "/logo-uol.png",
     time: "2020 - atualmente",

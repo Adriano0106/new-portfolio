@@ -1,8 +1,9 @@
 .footer {
   height: 50px;
-  position: absolute;
+  position: sticky;
   bottom: 0;
   width: -webkit-fill-available;
+  border-top: 1px solid #ebe6e7;
 }
 
 .footerCard {
