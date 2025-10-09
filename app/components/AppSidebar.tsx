@@ -29,7 +29,7 @@ export function AppSidebar({ activeSection, setActiveSection }: Props) {
   ]
 
   return (
-    <Sidebar>
+    <Sidebar variant="floating">
       <SidebarHeader>
         <div className="text-2xl font-bold p-4">Adriano Andrade</div>
       </SidebarHeader>

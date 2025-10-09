@@ -3,7 +3,9 @@
   position: sticky;
   bottom: 0;
   width: -webkit-fill-available;
-  border-top: 1px solid #ebe6e7;
+  border: 1px solid #ebe6e7;
+  margin: 10px 6px 10px 0;
+  border-radius: 8px;
 }
 
 .footerCard {

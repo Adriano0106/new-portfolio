@@ -1,0 +1,21 @@
+[data-slot="sidebar"],
+[data-slot="sidebar-container"],
+[data-slot="sidebar-inner"] {
+  max-width: 16rem !important;
+  max-height: calc(100vh - 16px) !important;
+  height: calc(100vh - 16px) !important;
+  box-sizing: border-box !important;
+  /* position: static !important; */
+  left: unset !important;
+  right: unset !important;
+}
+.sidebar-fixed,
+.sidebar-absolute {
+  max-width: 16rem !important;
+  max-height: calc(100vh - 16px) !important;
+  height: calc(100vh - 16px) !important;
+  box-sizing: border-box !important;
+  /* position: static !important; */
+  left: unset !important;
+  right: unset !important;
+}

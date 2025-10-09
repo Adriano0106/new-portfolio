@@ -31,13 +31,15 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState<SectionKey>("presentation")
 
   return (
-    <div className="flex min-h-screen w-full">
+    <div className="flex min-h-screen w-full max-w-[1920px] mx-auto">
       <AppSidebar
         activeSection={activeSection}
         setActiveSection={setActiveSection}
       />
       <div className="flex flex-col flex-1">
-        <div className="flex-1 h-full w-full">{sections[activeSection]}</div>
+        <div className="flex-1" style={{ height: "calc(100vh - 70px)" }}>
+          {sections[activeSection]}
+        </div>
         <Footer />
       </div>
     </div>
