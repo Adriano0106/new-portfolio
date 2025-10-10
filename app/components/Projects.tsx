@@ -1,12 +1,23 @@
 import Link from "next/link"
 
 const my_projects = [
-  ["😎", "Portfólio", "Você está aqui"],
-  ["🏎️", "Formula One Next", "https://adriano-formulaonenext.netlify.app/"],
+  [
+    "😎",
+    "Portfólio",
+    "Você está aqui",
+    "Projeto desenvolvido em Next com TypeScript utilizando Tailwind e Shadcn",
+  ],
   [
     "🏎️",
     "Formula One Database",
     "https://github.com/Adriano0106/Formula-One-Database",
+    "API desenvolvida em Node.js",
+  ],
+  [
+    "🏎️",
+    "Formula One Next",
+    "https://adriano-formulaonenext.netlify.app/",
+    "Projeto desenvolvido em React com TypeScript utilizando Bootstrap e a API acima.",
   ],
 ]
 
@@ -33,10 +44,9 @@ const Projects = () => {
                 </span>
               </>
             ) : (
-              <Link href={project[2]} className="project__link">
-                {project[1]}
-              </Link>
+              <Link href={project[2]}>{project[1]}</Link>
             )}
+            {project[3] && <p> - {project[3]}</p>}
           </li>
         ))}
       </ul>
