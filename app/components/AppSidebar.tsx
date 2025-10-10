@@ -10,9 +10,10 @@ import {
 type SectionKey =
   | "presentation"
   | "experience"
-  | "skills"
+  // | "skills"
   | "hobbies"
   | "projects"
+  | "contact"
 
 type Props = {
   activeSection: SectionKey
@@ -23,9 +24,10 @@ export function AppSidebar({ activeSection, setActiveSection }: Props) {
   const navigation = [
     { name: "Apresentação", key: "presentation" },
     { name: "Experiência", key: "experience" },
-    { name: "Skills", key: "skills" },
+    // { name: "Skills", key: "skills" },
     { name: "Hobbies", key: "hobbies" },
     { name: "Projetos", key: "projects" },
+    { name: "Contato", key: "contact" },
   ]
 
   return (
@@ -36,7 +38,10 @@ export function AppSidebar({ activeSection, setActiveSection }: Props) {
       <SidebarContent>
         <SidebarMenu>
           {navigation.map((item) => (
-            <SidebarMenuItem key={item.key} className="px-4 py-2">
+            <SidebarMenuItem
+              key={item.key}
+              className="px-4 py-2 cursor-pointer"
+            >
               <button
                 className={`cursor-pointer${
                   activeSection === item.key ? " font-bold" : ""

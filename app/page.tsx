@@ -8,13 +8,15 @@ import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 import { AppSidebar } from "./components/AppSidebar"
 import Footer from "./components/Footer"
+import Contact from "./components/Contact"
 
 const sectionKeys = [
   "presentation",
   "experience",
-  "skills",
+  // "skills",
   "hobbies",
   "projects",
+  "contact",
 ] as const
 
 type SectionKey = (typeof sectionKeys)[number]
@@ -22,9 +24,10 @@ type SectionKey = (typeof sectionKeys)[number]
 const sections: Record<SectionKey, JSX.Element> = {
   presentation: <Presentation />,
   experience: <Experience />,
-  skills: <Skills />,
+  // skills: <Skills />,
   hobbies: <Hobbies />,
   projects: <Projects />,
+  contact: <Contact />,
 }
 
 export default function Home() {
