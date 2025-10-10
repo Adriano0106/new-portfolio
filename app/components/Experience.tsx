@@ -53,17 +53,30 @@ const jobs = [
     time: "2020 - atualmente",
     lastSeenDateTime: "2023-01-23T13:23Z",
     techs: [
-      "JavaScript",
       "TypeScript",
+      "JavaScript",
       "ReactJS",
       "NextJS",
       "NodeJs",
-      "Git",
-      "Oracle",
-      "Bootstrap",
+      "Express",
+      "Knex",
+      "Prisma",
+      "Vitest",
+      "PHP",
       "Sass (Scss)",
+      "Bootstrap",
+      "Material",
+      "Tailwind",
+      "Shadcn",
+      "Gulp",
+      "Vite",
+      "Git",
       "CSS",
       "HTML",
+      "MySQL",
+      "SQLite",
+      "PostgreSQL",
+      "Oracle",
     ],
   },
 ]
@@ -122,12 +135,19 @@ const Experience = () => {
                   Tecnologias Utilizadas
                 </p>
                 {job.techs.map((t, i) => (
-                  <p
+                  // <p
+                  //   key={i}
+                  //   className="text-sm font-light leading-6 text-gray-900"
+                  // >
+                  //   {t}
+                  // </p>
+                  // layout lado a lado, limitar a 10 por linha
+                  <span
                     key={i}
-                    className="text-sm font-light leading-6 text-gray-900"
+                    className="inline-block bg-blue-100 text-blue-800 text-xs font-medium me-2 px-3 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
                   >
                     {t}
-                  </p>
+                  </span>
                 ))}
               </div>
             </div>
