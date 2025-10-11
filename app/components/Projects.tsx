@@ -11,13 +11,13 @@ const my_projects = [
     "🏎️",
     "Formula One Database",
     "https://github.com/Adriano0106/Formula-One-Database",
-    "API desenvolvida em Node.js",
+    "API desenvolvida em Node.js e express",
   ],
   [
     "🏎️",
     "Formula One Next",
     "https://adriano-formulaonenext.netlify.app/",
-    "Projeto desenvolvido em React com TypeScript utilizando Bootstrap e a API acima.",
+    "Projeto desenvolvido em NextJS com TypeScript utilizando Bootstrap, Styled Components e consumindo a API do projeto acima.",
   ],
 ]
 
