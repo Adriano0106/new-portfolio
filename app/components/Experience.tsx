@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import useWindowSize from "../hooks/useWindowSize"
 import Image from "next/image"
+import { Input } from "@/ui/input"
 
 const jobs = [
   {
@@ -85,13 +86,12 @@ const Experience = () => {
   const reversedJobs = [...jobs].reverse()
   const size = useWindowSize()
   const [isSmall, setIsSmall] = useState<boolean>(false)
+  const [showJobs, setShowJobs] = useState(reversedJobs)
 
   useEffect(() => {
     if (size.width !== undefined && size.width <= 768) {
-      console.log(true)
       setIsSmall(true)
     } else {
-      console.log(false)
       setIsSmall(false)
     }
   }, [size.width])
@@ -107,8 +107,20 @@ const Experience = () => {
     >
       <h1>Experiência</h1>
 
+      <Input
+        placeholder="Filtrar por tecnologia (ex: React, Node, Ruby)"
+        className="mb-4"
+        onChange={(e) => {
+          const filter = e.target.value.toLowerCase()
+          const filteredJobs = reversedJobs.filter((job) =>
+            job.techs.some((tech) => tech.toLowerCase().includes(filter))
+          )
+          filter === "" ? setShowJobs(reversedJobs) : setShowJobs(filteredJobs)
+        }}
+      />
+
       <ul role="list" className="divide-y divide-gray-100">
-        {reversedJobs.map((job) => (
+        {showJobs.map((job) => (
           <li
             key={job.description}
             className={`${sharedClasses} ${conditionalClass}`}
@@ -135,13 +147,6 @@ const Experience = () => {
                   Tecnologias Utilizadas
                 </p>
                 {job.techs.map((t, i) => (
-                  // <p
-                  //   key={i}
-                  //   className="text-sm font-light leading-6 text-gray-900"
-                  // >
-                  //   {t}
-                  // </p>
-                  // layout lado a lado, limitar a 10 por linha
                   <span
                     key={i}
                     className="inline-block bg-blue-100 text-blue-800 text-xs font-medium me-2 px-3 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
