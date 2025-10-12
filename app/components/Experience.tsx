@@ -109,7 +109,7 @@ const Experience = () => {
 
       <Input
         placeholder="Filtrar por tecnologia (ex: React, Node, Ruby)"
-        className="mb-4"
+        className="mb-2 mt-4"
         onChange={(e) => {
           const filter = e.target.value.toLowerCase()
           const filteredJobs = reversedJobs.filter((job) =>
