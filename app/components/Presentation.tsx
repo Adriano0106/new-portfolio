@@ -1,4 +1,12 @@
 import Image from "next/image"
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardFooter,
+} from "@/ui/card"
 
 const info = {
   name: "Adriano Andrade da Silva",
@@ -30,26 +38,35 @@ const Presentation = () => {
   return (
     <section
       id="presentation-section"
-      style={{ height: "auto" }}
-      className="scroll-pt-navbar py-4"
+      className="scroll-pt-navbar py-8 flex items-center justify-center"
     >
-      <div className="flex justify-center">
-        <Image
-          src="/adriano_new_picture.png"
-          width={250}
-          height={250}
-          alt="Picture of the author"
-          className="profile__picture"
-          style={{ borderRadius: "50%" }}
-        />
-        <div className="profile__info">
-          <h1>{info.name}</h1>
-          <h3>{info.job}</h3>
-          <p>{age} anos</p>
-          <p>{info.degree}</p>
-          <p>{info.about}</p>
-        </div>
-      </div>
+      <Card className="w-full max-w-3xl rounded-xl shadow-lg">
+        <CardHeader className="flex flex-col md:flex-row items-center gap-8">
+          <Image
+            src="/adriano_new_picture.png"
+            width={180}
+            height={180}
+            alt="Foto de Adriano Andrade"
+            className="rounded-full border-4 border-gray-200 shadow-lg"
+          />
+          <div className="flex flex-col items-center md:items-start text-center md:text-left gap-2">
+            <CardTitle className="text-3xl font-bold text-gray-700">
+              {info.name}
+            </CardTitle>
+            <CardDescription className="text-xl font-semibold text-gray-700">
+              {info.job}
+            </CardDescription>
+            <div className="flex gap-4 text-gray-500 text-sm mt-2">
+              <span>{age} anos</span>
+              <span>•</span>
+              <span>{info.degree}</span>
+            </div>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <p className="mt-2 text-gray-600">{info.about}</p>
+        </CardContent>
+      </Card>
     </section>
   )
 }
