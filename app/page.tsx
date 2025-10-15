@@ -14,8 +14,8 @@ const sectionKeys = [
   "presentation",
   "experience",
   // "skills",
-  "hobbies",
   "projects",
+  "hobbies",
   "contact",
 ] as const
 
@@ -25,8 +25,8 @@ const sections: Record<SectionKey, JSX.Element> = {
   presentation: <Presentation />,
   experience: <Experience />,
   // skills: <Skills />,
-  hobbies: <Hobbies />,
   projects: <Projects />,
+  hobbies: <Hobbies />,
   contact: <Contact />,
 }
 

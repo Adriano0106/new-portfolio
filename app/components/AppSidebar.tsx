@@ -25,8 +25,8 @@ export function AppSidebar({ activeSection, setActiveSection }: Props) {
     { name: "Apresentação", key: "presentation" },
     { name: "Experiência", key: "experience" },
     // { name: "Skills", key: "skills" },
-    { name: "Hobbies", key: "hobbies" },
     { name: "Projetos", key: "projects" },
+    { name: "Hobbies", key: "hobbies" },
     { name: "Contato", key: "contact" },
   ]
 
