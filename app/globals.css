@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @import "tw-animate-css";
 /*
   ---break---
@@ -44,8 +44,7 @@ h3 {
 
 .profile__picture {
   border: 1px solid transparent;
-  box-shadow: 0 2px 5px 1px rgba(64,60,67,.16);
-
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
 }
 .profile__info {
   margin-left: 20px;
@@ -64,7 +63,8 @@ h3 {
   margin-bottom: 2rem;
 }
 
-section#skills-section, section#hobbies-section {
+section#skills-section,
+section#hobbies-section {
   margin: 0;
 }
 

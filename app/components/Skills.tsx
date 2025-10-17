@@ -26,17 +26,6 @@ const Skills = () => {
     >
       <h1>Skills</h1>
 
-      {/* <div>
-      {my_skills.map((skill) => (
-        <div key={skill[0].toString().toLocaleLowerCase()}>
-          <div className="mb-1 text-base font-medium text-gray-700 dark:text-gray-500">{skill[0]}</div>
-          <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-            <div className="bg-indigo-600 h-2.5 rounded-full" style={{ width: skill[1] + '%' }}></div>
-          </div>
-        </div>
-      ))}
-      </div> */}
-
       <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
         {my_skills.map((skill, index) => (
           <li
