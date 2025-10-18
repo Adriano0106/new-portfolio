@@ -1,87 +1,93 @@
-import { useState } from "react"
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarFooter,
-  SidebarHeader,
-  SidebarMenu,
-  SidebarMenuItem,
-} from "@/ui/sidebar"
-import { Button } from "@/ui/button"
 import { RiMenu5Fill } from "react-icons/ri"
+import * as Collapsible from "@radix-ui/react-collapsible"
+import { Button } from "@/ui/button"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 type SectionKey =
   | "presentation"
   | "experience"
-  // | "skills"
-  | "hobbies"
   | "projects"
+  | "hobbies"
   | "contact"
 
 type Props = {
   activeSection: SectionKey
   setActiveSection: (key: SectionKey) => void
+  open: boolean
+  setOpen: (open: boolean) => void
 }
 
-export function AppSidebar({ activeSection, setActiveSection }: Props) {
-  const [open, setOpen] = useState(true)
-  const navigation = [
-    { name: "Apresentação", key: "presentation" },
-    { name: "Experiência", key: "experience" },
-    // { name: "Skills", key: "skills" },
-    { name: "Projetos", key: "projects" },
-    { name: "Hobbies", key: "hobbies" },
-    { name: "Contato", key: "contact" },
-  ]
+const navigation = [
+  { name: "Apresentação", key: "presentation" },
+  { name: "Experiência", key: "experience" },
+  { name: "Projetos", key: "projects" },
+  { name: "Hobbies", key: "hobbies" },
+  { name: "Contato", key: "contact" },
+]
 
+export function AppSidebar({
+  activeSection,
+  setActiveSection,
+  open,
+  setOpen,
+}: Props) {
+  const isMobile = useIsMobile()
   return (
     <>
+      {/* Botão para abrir a sidebar, só aparece quando fechada no mobile */}
       {!open && (
         <Button
-          variant="outline"
-          className="fixed top-0 left-0 z-30 m-4"
+          variant="ghost"
+          size="icon"
+          className="absolute top-4 left-4 z-30"
           onClick={() => setOpen(true)}
         >
-          <RiMenu5Fill />
+          <RiMenu5Fill className="h-6 w-6" />
         </Button>
       )}
-      {open && (
-        <Sidebar variant="floating">
-          <SidebarHeader>
-            <div className="flex items-center justify-between p-4">
-              <span className="text-2xl font-bold">Adriano Andrade</span>
+
+      <Collapsible.Root
+        open={open}
+        onOpenChange={setOpen}
+        className="
+    z-40 flex flex-col border-r border-zinc-200 bg-white p-4
+    dark:border-zinc-800 dark:bg-zinc-900
+    absolute top-0 left-0 transition-all w-screen h-[97vh]
+    mr-[10px] shadow-md overflow-hidden
+    data-[state=closed]:-translate-x-[100vw] data-[state=closed]:w-0
+    lg:w-64 lg:h-[97vh] lg:my-2 lg:ml-2 lg:rounded-2xl lg:shadow-md lg:mr-0
+  "
+      >
+        <div className="flex items-center justify-between mb-6">
+          <span className="text-2xl font-bold">Adriano Andrade</span>
+          <Collapsible.Trigger asChild>
+            <Button variant="ghost" size="icon">
+              <RiMenu5Fill className="h-6 w-6" />
+            </Button>
+          </Collapsible.Trigger>
+        </div>
+
+        <Collapsible.Content
+          forceMount
+          className="flex flex-1 flex-col gap-6 data-[state=closed]:hidden"
+        >
+          <nav className="flex flex-col gap-2">
+            {navigation.map((item) => (
               <Button
-                variant="outline"
-                className="ml-2"
-                style={{ position: "relative", left: "4px" }}
-                onClick={() => setOpen(false)}
+                key={item.key}
+                variant={activeSection === item.key ? "secondary" : "ghost"}
+                className="justify-start"
+                onClick={() => {
+                  setActiveSection(item.key as SectionKey)
+                  if (isMobile) setOpen(false)
+                }}
               >
-                <RiMenu5Fill />
+                {item.name}
               </Button>
-            </div>
-          </SidebarHeader>
-          <SidebarContent>
-            <SidebarMenu>
-              {navigation.map((item) => (
-                <SidebarMenuItem
-                  key={item.key}
-                  className="px-4 py-2 cursor-pointer"
-                >
-                  <button
-                    className={`cursor-pointer${
-                      activeSection === item.key ? " font-bold" : ""
-                    }`}
-                    onClick={() => setActiveSection(item.key as SectionKey)}
-                  >
-                    {item.name}
-                  </button>
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarContent>
-          <SidebarFooter />
-        </Sidebar>
-      )}
+            ))}
+          </nav>
+        </Collapsible.Content>
+      </Collapsible.Root>
     </>
   )
 }

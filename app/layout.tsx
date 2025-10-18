@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex max-w-[1920px] w-full mx-auto overflow-hidden">
+        <div className="flex max-w-[1920px] w-full mx-auto relative overflow-x-hidden">
           <SidebarProvider>{children}</SidebarProvider>
         </div>
       </body>

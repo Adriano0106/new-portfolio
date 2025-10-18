@@ -32,14 +32,21 @@ const sections: Record<SectionKey, JSX.Element> = {
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<SectionKey>("presentation")
+  const [sidebarOpen, setSidebarOpen] = useState(true)
 
   return (
     <div className="flex min-h-screen w-full max-w-[1920px] mx-auto">
       <AppSidebar
         activeSection={activeSection}
         setActiveSection={setActiveSection}
+        open={sidebarOpen}
+        setOpen={setSidebarOpen}
       />
-      <div className="flex flex-col flex-1">
+      <div
+        className={`flex flex-col flex-1 transition-all duration-300 ${
+          sidebarOpen ? "lg:ml-68" : ""
+        }`}
+      >
         <div className="flex-1" style={{ height: "calc(100vh - 70px)" }}>
           {sections[activeSection]}
         </div>
