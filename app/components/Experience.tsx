@@ -4,6 +4,11 @@ import { useState, useEffect } from "react"
 import useWindowSize from "../hooks/useWindowSize"
 import Image from "next/image"
 import { Input } from "@/ui/input"
+import { Title } from "./Title"
+
+type ExperienceProps = {
+  sidebarOpen: boolean
+}
 
 const jobs = [
   {
@@ -82,7 +87,7 @@ const jobs = [
   },
 ]
 
-const Experience = () => {
+const Experience = ({ sidebarOpen }: ExperienceProps) => {
   const reversedJobs = [...jobs].reverse()
   const size = useWindowSize()
   const [isSmall, setIsSmall] = useState<boolean>(false)
@@ -105,7 +110,7 @@ const Experience = () => {
       style={{ height: "auto" }}
       className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar py-4"
     >
-      <h1>Experiência</h1>
+      <Title sidebarOpen={sidebarOpen}>Experiência</Title>
 
       <Input
         placeholder="Filtrar por tecnologia (ex: React, Node, Ruby)"

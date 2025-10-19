@@ -21,18 +21,18 @@ const sectionKeys = [
 
 type SectionKey = (typeof sectionKeys)[number]
 
-const sections: Record<SectionKey, JSX.Element> = {
-  presentation: <Presentation />,
-  experience: <Experience />,
-  // skills: <Skills />,
-  projects: <Projects />,
-  hobbies: <Hobbies />,
-  contact: <Contact />,
-}
-
 export default function Home() {
   const [activeSection, setActiveSection] = useState<SectionKey>("presentation")
   const [sidebarOpen, setSidebarOpen] = useState(true)
+
+  const sections: Record<SectionKey, JSX.Element> = {
+    presentation: <Presentation />,
+    experience: <Experience sidebarOpen={sidebarOpen} />,
+    // skills: <Skills sidebarOpen={sidebarOpen} />,
+    projects: <Projects sidebarOpen={sidebarOpen} />,
+    hobbies: <Hobbies sidebarOpen={sidebarOpen} />,
+    contact: <Contact sidebarOpen={sidebarOpen} />,
+  }
 
   return (
     <div className="flex min-h-screen w-full max-w-[1920px] mx-auto">

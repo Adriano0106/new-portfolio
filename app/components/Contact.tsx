@@ -9,15 +9,20 @@ import {
   CardDescription,
   CardFooter,
 } from "@/ui/card"
+import { Title } from "./Title"
 
-const Contact = () => {
+type ContactProps = {
+  sidebarOpen: boolean
+}
+
+const Contact = ({ sidebarOpen }: ContactProps) => {
   return (
     <section
       id="hobbies-section"
       style={{ width: "inherit" }}
       className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar py-4"
     >
-      <h1>Contato</h1>
+      <Title sidebarOpen={sidebarOpen}>Contato</Title>
       <Card>
         <CardHeader>
           {/* <CardTitle>Vamos conversar!</CardTitle> */}

@@ -9,6 +9,11 @@ import {
   CardTitle,
 } from "@/ui/card"
 import { FaExternalLinkAlt } from "react-icons/fa"
+import { Title } from "./Title"
+
+type ProjectProps = {
+  sidebarOpen: boolean
+}
 
 const my_projects = [
   [
@@ -31,14 +36,14 @@ const my_projects = [
   ],
 ]
 
-const Projects = () => {
+const Projects = ({ sidebarOpen }: ProjectProps) => {
   return (
     <section
       id="projects-section"
       style={{ width: "inherit" }}
       className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar py-4"
     >
-      <h1 className="mb-4">Projetos</h1>
+      <Title sidebarOpen={sidebarOpen}>Projetos</Title>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {my_projects.map((project, index) => (
           <Card key={index} className="w-full">

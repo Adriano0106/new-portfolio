@@ -1,4 +1,9 @@
 import Image from "next/image"
+import { Title } from "./Title"
+
+type SkillProps = {
+  sidebarOpen: boolean
+}
 
 const my_skills = [
   ["JavaScript", "/techs/js.png"],
@@ -17,14 +22,14 @@ const my_skills = [
   ["Responsive Design", "/techs/responsive_design.jpg"],
 ]
 
-const Skills = () => {
+const Skills = ({ sidebarOpen }: SkillProps) => {
   return (
     <section
       id="skills-section"
       style={{ width: "inherit" }}
       className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar py-4"
     >
-      <h1>Skills</h1>
+      <Title sidebarOpen={sidebarOpen}>Skills</Title>
 
       <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
         {my_skills.map((skill, index) => (

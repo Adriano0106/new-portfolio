@@ -1,3 +1,9 @@
+import { Title } from "./Title"
+
+type HobbieProps = {
+  sidebarOpen: boolean
+}
+
 const my_hobbies = [
   ["Assistir futebol", "⚽"],
   ["Ver filmes e séries", "📺"],
@@ -6,14 +12,14 @@ const my_hobbies = [
   ["Ouvir música", "🎧"],
 ]
 
-const Hobbies = () => {
+const Hobbies = ({ sidebarOpen }: HobbieProps) => {
   return (
     <section
       id="hobbies-section"
       style={{ width: "inherit" }}
       className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar py-4"
     >
-      <h1>Hobbies</h1>
+      <Title sidebarOpen={sidebarOpen}>Hobbies</Title>
       <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
         {my_hobbies.map((hobbie, index) => (
           <li
