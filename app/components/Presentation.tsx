@@ -14,6 +14,9 @@ const info = {
   birthDate: "1995-06-01",
   degree: "Bacharel em Ciência da Computação",
   about: "Corinthiano, fã de música e cultura POP.",
+  city: "São Paulo",
+  state: "SP",
+  country: "Brasil",
 }
 
 const calculateAge = (birthDate: string): number => {
@@ -40,7 +43,7 @@ const Presentation = () => {
       id="presentation-section"
       className="scroll-pt-navbar py-8 flex items-center justify-center"
     >
-      <Card className="w-full max-w-3xl rounded-xl shadow-lg">
+      <Card className="w-full max-w-3xl rounded-xl shadow-lg m-2">
         <CardHeader className="flex flex-col md:flex-row items-center gap-8">
           <Image
             src="/adriano_new_picture.png"
@@ -59,11 +62,14 @@ const Presentation = () => {
             <div className="flex gap-4 text-gray-500 text-sm mt-2">
               <span>{age} anos</span>
               <span>•</span>
-              <span>{info.degree}</span>
+              <span>
+                {info.city}, {info.state}
+              </span>
             </div>
           </div>
         </CardHeader>
         <CardContent>
+          <p className="mt-2 text-gray-600">{info.degree}</p>
           <p className="mt-2 text-gray-600">{info.about}</p>
         </CardContent>
       </Card>
