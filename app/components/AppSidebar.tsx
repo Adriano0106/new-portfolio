@@ -39,7 +39,7 @@ export function AppSidebar({
         <Button
           variant="secondary"
           size="icon"
-          className="absolute top-4 left-4 z-30 border-1"
+          className="absolute top-4 left-4 z-30 border-1 cursor-pointer"
           onClick={() => setOpen(true)}
         >
           <RiMenu5Fill className="h-6 w-6" />
@@ -61,7 +61,11 @@ export function AppSidebar({
         <div className="flex items-center justify-between mb-6">
           <span className="text-2xl font-bold">Adriano Andrade</span>
           <Collapsible.Trigger asChild>
-            <Button variant="secondary" size="icon" className="border-1">
+            <Button
+              variant="secondary"
+              size="icon"
+              className="border-1 cursor-pointer"
+            >
               <RiMenu5Fill className="h-6 w-6" />
             </Button>
           </Collapsible.Trigger>
@@ -76,7 +80,7 @@ export function AppSidebar({
               <Button
                 key={item.key}
                 variant={activeSection === item.key ? "secondary" : "ghost"}
-                className="justify-start"
+                className="justify-start cursor-pointer"
                 onClick={() => {
                   setActiveSection(item.key as SectionKey)
                   if (isMobile) setOpen(false)
