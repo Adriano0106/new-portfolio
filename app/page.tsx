@@ -44,7 +44,7 @@ export default function Home() {
       />
       <div
         className={`flex flex-col flex-1 transition-all duration-300 ${
-          sidebarOpen ? "lg:ml-68" : ""
+          sidebarOpen ? "lg:ml-66" : ""
         }`}
       >
         <div className="flex-1" style={{ height: "calc(100vh - 70px)" }}>

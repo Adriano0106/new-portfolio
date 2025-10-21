@@ -23,9 +23,8 @@ const Contact = ({ sidebarOpen }: ContactProps) => {
       className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar py-4"
     >
       <Title sidebarOpen={sidebarOpen}>Contato</Title>
-      <Card>
+      <Card className="gap-0">
         <CardHeader>
-          {/* <CardTitle>Vamos conversar!</CardTitle> */}
           <CardDescription>
             Você pode entrar em contato comigo através dos emails:
           </CardDescription>
@@ -50,7 +49,7 @@ const Contact = ({ sidebarOpen }: ContactProps) => {
         </CardContent>
       </Card>
 
-      <Card className="mt-4">
+      <Card className="mt-4 gap-0">
         <CardHeader>
           <CardDescription className="mb-2">
             Ou através das minhas redes sociais:

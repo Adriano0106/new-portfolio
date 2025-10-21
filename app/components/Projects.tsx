@@ -46,7 +46,7 @@ const Projects = ({ sidebarOpen }: ProjectProps) => {
       <Title sidebarOpen={sidebarOpen}>Projetos</Title>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {my_projects.map((project, index) => (
-          <Card key={index} className="w-full">
+          <Card key={index} className="w-full gap-2">
             <CardHeader>
               <CardTitle className="text-lg">
                 {project[0]} {project[1]}
