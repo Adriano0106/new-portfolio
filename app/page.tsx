@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Experience from "./components/Experience"
 import Hobbies from "./components/Hobbie"
 import Presentation from "./components/Presentation"
@@ -9,6 +9,7 @@ import Skills from "./components/Skills"
 import { AppSidebar } from "./components/AppSidebar"
 import Footer from "./components/Footer"
 import Contact from "./components/Contact"
+import useWindowSize from "./hooks/useWindowSize"
 
 const sectionKeys = [
   "presentation",
@@ -23,7 +24,17 @@ type SectionKey = (typeof sectionKeys)[number]
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<SectionKey>("presentation")
-  const [sidebarOpen, setSidebarOpen] = useState(true)
+  const { width } = useWindowSize()
+  const isMobile = width !== undefined && width < 767
+  const [sidebarOpen, setSidebarOpen] = useState<boolean | undefined>(undefined)
+
+  useEffect(() => {
+    if (width !== undefined) {
+      setSidebarOpen(!isMobile)
+    }
+  }, [isMobile, width])
+
+  if (sidebarOpen === undefined) return null
 
   const sections: Record<SectionKey, JSX.Element> = {
     presentation: <Presentation />,
