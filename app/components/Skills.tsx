@@ -1,4 +1,9 @@
-import Image from "next/image";
+import Image from "next/image"
+import { Title } from "./Title"
+
+type SkillProps = {
+  sidebarOpen: boolean
+}
 
 const my_skills = [
   ["JavaScript", "/techs/js.png"],
@@ -14,29 +19,24 @@ const my_skills = [
   ["CSS", "/techs/css.png"],
   ["SQL", "/techs/sql.jpg"],
   ["Rest API", "/techs/api_rest.jpg"],
-  ["Responsive Design", "/techs/responsive_design.jpg"]
+  ["Responsive Design", "/techs/responsive_design.jpg"],
 ]
 
-const Skills = () => {
+const Skills = ({ sidebarOpen }: SkillProps) => {
   return (
-    <section id="skills-section" style={{ width: "inherit" }} className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar pt-16">
-      <h1>Skills</h1>
-
-
-      {/* <div>
-      {my_skills.map((skill) => (
-        <div key={skill[0].toString().toLocaleLowerCase()}>
-          <div className="mb-1 text-base font-medium text-gray-700 dark:text-gray-500">{skill[0]}</div>
-          <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-            <div className="bg-indigo-600 h-2.5 rounded-full" style={{ width: skill[1] + '%' }}></div>
-          </div>
-        </div>
-      ))}
-      </div> */}
+    <section
+      id="skills-section"
+      style={{ width: "inherit" }}
+      className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar py-4"
+    >
+      <Title sidebarOpen={sidebarOpen}>Skills</Title>
 
       <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
         {my_skills.map((skill, index) => (
-          <li key={index} className="flex items-center space-x-3 rtl:space-x-reverse">
+          <li
+            key={index}
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
             <span>
               <Image
                 src={skill[1]}
@@ -44,7 +44,7 @@ const Skills = () => {
                 height={20}
                 alt="Picture tecnology"
                 className="skills__picture"
-              // style={{ borderRadius: "50%" }}
+                // style={{ borderRadius: "50%" }}
               />
             </span>
             <span>{skill[0]}</span>
@@ -55,4 +55,4 @@ const Skills = () => {
   )
 }
 
-export default Skills;
+export default Skills
