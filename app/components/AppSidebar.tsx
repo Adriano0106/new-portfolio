@@ -7,7 +7,7 @@ type SectionKey =
   | "presentation"
   | "experience"
   | "projects"
-  | "hobbies"
+  // | "hobbies"
   | "contact"
 
 type Props = {
@@ -21,7 +21,7 @@ const navigation = [
   { name: "Apresentação", key: "presentation" },
   { name: "Experiência", key: "experience" },
   { name: "Projetos", key: "projects" },
-  { name: "Hobbies", key: "hobbies" },
+  // { name: "Hobbies", key: "hobbies" },
   { name: "Contato", key: "contact" },
 ]
 

@@ -15,7 +15,7 @@ const sectionKeys = [
   "experience",
   // "skills",
   "projects",
-  "hobbies",
+  // "hobbies",
   "contact",
 ] as const
 
@@ -30,7 +30,7 @@ export default function Home() {
     experience: <Experience sidebarOpen={sidebarOpen} />,
     // skills: <Skills sidebarOpen={sidebarOpen} />,
     projects: <Projects sidebarOpen={sidebarOpen} />,
-    hobbies: <Hobbies sidebarOpen={sidebarOpen} />,
+    // hobbies: <Hobbies sidebarOpen={sidebarOpen} />,
     contact: <Contact sidebarOpen={sidebarOpen} />,
   }
 
