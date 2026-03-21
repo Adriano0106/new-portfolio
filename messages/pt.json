@@ -1,0 +1,103 @@
+{
+  "navigation": {
+    "presentation": "Apresentação",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "hobbies": "Hobbies",
+    "contact": "Contato"
+  },
+  "presentation": {
+    "title": "Adriano Andrade da Silva",
+    "job": "Desenvolvedor Full Stack",
+    "about": "Corinthiano, fã de música e cultura POP.",
+    "age": "anos",
+    "degree": "Bacharel em Ciência da Computação"
+  },
+  "experience": {
+    "title": "Experiência",
+    "filter": "Filtrar por tecnologia (ex: React, Node, Ruby)",
+    "usedTechs": "Tecnologias Utilizadas",
+    "jobs": [
+      {
+        "name": "UOL",
+        "role": "Desenvolvedor Full Stack",
+        "imageUrl": "/logo-uol.png",
+        "time": "2020 - atualmente",
+        "description": "APIs\nDesenvolvimento de APIs, com foco em fornecer dados para que os mesmos sejam utilizados por diversos sistemas e áreas da empresa.\n\nAutomação de Publicações em Plataformas de Publicidade\nCriação de scripts para publicação e atualização em lote nas plataformas de gerenciamento de anúncios utilizadas pela equipe de Operação.\n\nCriação de Publicidades\nDesenvolvimento de peças publicitárias para exibição no UOL e em sites parceiros com animações CSS.\n\nDesenvolvimento de Sites e Sistemas Internos\nResponsável pelo desenvolvimento de sites para novas publicações.\nResponsável pela criação do novo sistema de FAQ de diversas áreas do UOL.\nDesenvolvimento de ferramentas de automação para importação e atualização de conteúdos em lote.\n\nSistema de Controle de Acesso de Usuários\nDesenvolvimento de um sistema interno para gerenciamento de acessos, com interface intuitiva e integração com banco de dados relacional.",
+        "techs": [
+          "TypeScript",
+          "JavaScript",
+          "ReactJS",
+          "NextJS",
+          "NodeJs",
+          "Express",
+          "Knex",
+          "Prisma",
+          "Vitest",
+          "PHP",
+          "Sass (Scss)",
+          "Bootstrap",
+          "Material",
+          "Tailwind",
+          "Shadcn",
+          "Gulp",
+          "Vite",
+          "Git",
+          "CSS",
+          "HTML",
+          "MySQL",
+          "SQLite",
+          "PostgreSQL",
+          "Oracle"
+        ]
+      },
+      {
+        "name": "Gigaservices",
+        "role": "Trainee",
+        "imageUrl": "/gigaservices-logo.jpg",
+        "time": "2018 - 2020",
+        "description": "Desenvolvimento de Interfaces com Ruby on Rails\nCriação e manutenção de views em aplicações Ruby on Rails, aplicando JavaScript, jQuery e Bootstrap para garantir interfaces funcionais e responsivas.\n\nImplementação de Funcionalidades e Back-End\nDesenvolvimento de novas funcionalidades utilizando Ruby, com manipulação de dados em banco PostgreSQL e cobertura de testes com RSpec.\n\nAtuação em Qualidade e Suporte\nColaboração nos testes de aplicações e no suporte direto ao cliente, contribuindo para a identificação e resolução de problemas técnicos.",
+        "techs": [
+          "Ruby on Rails",
+          "Ruby",
+          "JavaScript",
+          "PostgreSQL",
+          "Git",
+          "Bootstrap",
+          "CSS",
+          "HTML"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projetos",
+    "visit": "Ver Projeto",
+    "youAreHere": "Você está aqui",
+    "items": [
+      {
+        "emoji": "😎",
+        "name": "Portfólio",
+        "link": "youAreHere",
+        "description": "Projeto desenvolvido em Next com TypeScript utilizando Tailwind e Shadcn."
+      },
+      {
+        "emoji": "🏎️",
+        "name": "Formula One Database",
+        "link": "https://github.com/Adriano0106/Formula-One-Database",
+        "description": "API desenvolvida em Node.js e express."
+      },
+      {
+        "emoji": "🏎️",
+        "name": "Formula One Next",
+        "link": "https://adriano-formulaonenext.netlify.app/",
+        "description": "Projeto desenvolvido em Next com TypeScript utilizando Bootstrap, Styled Components e consumindo a API do projeto acima."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contato",
+    "emailDescription": "Você pode entrar em contato comigo através dos emails:",
+    "socialDescription": "Ou através das minhas redes sociais:"
+  }
+}

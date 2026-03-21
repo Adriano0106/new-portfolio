@@ -1,0 +1,103 @@
+{
+  "navigation": {
+    "presentation": "Presentation",
+    "experience": "Experience",
+    "projects": "Projects",
+    "hobbies": "Hobbies",
+    "contact": "Contact"
+  },
+  "presentation": {
+    "title": "Adriano Andrade da Silva",
+    "job": "Full Stack Developer",
+    "about": "Corinthians fan, music and POP culture enthusiast.",
+    "age": "years old",
+    "degree": "Bachelor's in Computer Science"
+  },
+  "experience": {
+    "title": "Experience",
+    "filter": "Filter by technology (e.g.: React, Node, Ruby)",
+    "usedTechs": "Technologies Used",
+    "jobs": [
+      {
+        "name": "UOL",
+        "role": "Full Stack Developer",
+        "imageUrl": "/logo-uol.png",
+        "time": "2020 - currently",
+        "description": "APIs\nDevelopment of APIs, focused on providing data to be used by various systems and departments within the company.\n\nAutomation of Publications on Advertising Platforms\nCreation of scripts for bulk publishing and updating on ad management platforms used by the Operations team.\n\nAdvertising Creation\nDevelopment of advertising pieces for display on UOL and partner sites with CSS animations.\n\nWebsite and Internal Systems Development\nResponsible for developing websites for new publications.\nResponsible for creating the new FAQ system for various UOL departments.\nDevelopment of automation tools for bulk content import and update.\n\nUser Access Control System\nDevelopment of an internal system for access management, with an intuitive interface and relational database integration.",
+        "techs": [
+          "TypeScript",
+          "JavaScript",
+          "ReactJS",
+          "NextJS",
+          "NodeJs",
+          "Express",
+          "Knex",
+          "Prisma",
+          "Vitest",
+          "PHP",
+          "Sass (Scss)",
+          "Bootstrap",
+          "Material",
+          "Tailwind",
+          "Shadcn",
+          "Gulp",
+          "Vite",
+          "Git",
+          "CSS",
+          "HTML",
+          "MySQL",
+          "SQLite",
+          "PostgreSQL",
+          "Oracle"
+        ]
+      },
+      {
+        "name": "Gigaservices",
+        "role": "Trainee",
+        "imageUrl": "/gigaservices-logo.jpg",
+        "time": "2018 - 2020",
+        "description": "Interface Development with Ruby on Rails\nCreation and maintenance of views in Ruby on Rails applications, applying JavaScript, jQuery and Bootstrap to ensure functional and responsive interfaces.\n\nFeature and Back-End Implementation\nDevelopment of new features using Ruby, with data manipulation in PostgreSQL database and test coverage with RSpec.\n\nQuality and Support\nCollaboration in application testing and direct customer support, contributing to the identification and resolution of technical issues.",
+        "techs": [
+          "Ruby on Rails",
+          "Ruby",
+          "JavaScript",
+          "PostgreSQL",
+          "Git",
+          "Bootstrap",
+          "CSS",
+          "HTML"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "visit": "View Project",
+    "youAreHere": "You are here",
+    "items": [
+      {
+        "emoji": "😎",
+        "name": "Portfolio",
+        "link": "youAreHere",
+        "description": "Project developed in Next with TypeScript using Tailwind and Shadcn."
+      },
+      {
+        "emoji": "🏎️",
+        "name": "Formula One Database",
+        "link": "https://github.com/Adriano0106/Formula-One-Database",
+        "description": "API developed in Node.js and Express."
+      },
+      {
+        "emoji": "🏎️",
+        "name": "Formula One Next",
+        "link": "https://adriano-formulaonenext.netlify.app/",
+        "description": "Project developed in Next with TypeScript using Bootstrap, Styled Components and consuming the API from the project above."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "emailDescription": "You can reach me through the emails:",
+    "socialDescription": "Or through my social networks:"
+  }
+}
