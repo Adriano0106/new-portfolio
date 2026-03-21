@@ -2,6 +2,8 @@ import { RiMenu5Fill } from "react-icons/ri"
 import * as Collapsible from "@radix-ui/react-collapsible"
 import { Button } from "@/ui/button"
 import { useIsMobile } from "@/hooks/use-mobile"
+import { LanguageToggle } from "./LanguageToggle"
+import { useI18n } from "../context/I18nContext"
 
 type SectionKey =
   | "presentation"
@@ -17,14 +19,6 @@ type Props = {
   setOpen: (open: boolean) => void
 }
 
-const navigation = [
-  { name: "Apresentação", key: "presentation" },
-  { name: "Experiência", key: "experience" },
-  { name: "Projetos", key: "projects" },
-  // { name: "Hobbies", key: "hobbies" },
-  { name: "Contato", key: "contact" },
-]
-
 export function AppSidebar({
   activeSection,
   setActiveSection,
@@ -32,6 +26,15 @@ export function AppSidebar({
   setOpen,
 }: Props) {
   const isMobile = useIsMobile()
+  const { t } = useI18n()
+
+  const navigation = [
+    { name: t("navigation.presentation"), key: "presentation" },
+    { name: t("navigation.experience"), key: "experience" },
+    { name: t("navigation.projects"), key: "projects" },
+    // { name: t("navigation.hobbies"), key: "hobbies" },
+    { name: t("navigation.contact"), key: "contact" },
+  ]
   return (
     <>
       {/* Botão para abrir a sidebar, só aparece quando fechada no mobile */}
@@ -70,6 +73,8 @@ export function AppSidebar({
             </Button>
           </Collapsible.Trigger>
         </div>
+
+        <LanguageToggle />
 
         <Collapsible.Content
           forceMount

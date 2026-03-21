@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import {
   Card,
@@ -5,19 +7,12 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-  CardFooter,
 } from "@/ui/card"
+import { useI18n } from "../context/I18nContext"
 
-const info = {
-  name: "Adriano Andrade da Silva",
-  job: "Desenvolvedor Full Stack",
-  birthDate: "1995-06-01",
-  degree: "Bacharel em Ciência da Computação",
-  about: "Corinthiano, fã de música e cultura POP.",
-  city: "São Paulo",
-  state: "SP",
-  country: "Brasil",
-}
+const birthDate = "1995-06-01"
+const city = "São Paulo"
+const state = "SP"
 
 const calculateAge = (birthDate: string): number => {
   const today = new Date()
@@ -36,7 +31,8 @@ const calculateAge = (birthDate: string): number => {
 }
 
 const Presentation = () => {
-  const age = calculateAge(info.birthDate)
+  const { t } = useI18n()
+  const age = calculateAge(birthDate)
 
   return (
     <section
@@ -54,23 +50,25 @@ const Presentation = () => {
           />
           <div className="flex flex-col items-center md:items-start text-center md:text-left gap-2">
             <CardTitle className="text-3xl font-bold text-gray-700">
-              {info.name}
+              {t("presentation.title")}
             </CardTitle>
             <CardDescription className="text-xl font-semibold text-gray-700">
-              {info.job}
+              {t("presentation.job")}
             </CardDescription>
             <div className="flex gap-4 text-gray-500 text-sm mt-2">
-              <span>{age} anos</span>
+              <span>
+                {age} {t("presentation.age")}
+              </span>
               <span>•</span>
               <span>
-                {info.city}, {info.state}
+                {city}, {state}
               </span>
             </div>
           </div>
         </CardHeader>
         <CardContent>
-          <p className="mt-2 text-gray-600">{info.degree}</p>
-          <p className="mt-2 text-gray-600">{info.about}</p>
+          <p className="mt-2 text-gray-600">{t("presentation.degree")}</p>
+          <p className="mt-2 text-gray-600">{t("presentation.about")}</p>
         </CardContent>
       </Card>
     </section>

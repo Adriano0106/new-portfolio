@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import styles from "./../styles/footer.module.css"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
@@ -10,24 +12,25 @@ import {
   CardFooter,
 } from "@/ui/card"
 import { Title } from "./Title"
+import { useI18n } from "../context/I18nContext"
 
 type ContactProps = {
   sidebarOpen: boolean
 }
 
 const Contact = ({ sidebarOpen }: ContactProps) => {
+  const { t } = useI18n()
+
   return (
     <section
-      id="hobbies-section"
+      id="contact-section"
       style={{ width: "inherit" }}
       className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar py-4"
     >
-      <Title sidebarOpen={sidebarOpen}>Contato</Title>
+      <Title sidebarOpen={sidebarOpen}>{t("contact.title")}</Title>
       <Card className="gap-0">
         <CardHeader>
-          <CardDescription>
-            Você pode entrar em contato comigo através dos emails:
-          </CardDescription>
+          <CardDescription>{t("contact.emailDescription")}</CardDescription>
         </CardHeader>
         <CardContent className="space-y-2">
           <CardDescription>
@@ -52,7 +55,7 @@ const Contact = ({ sidebarOpen }: ContactProps) => {
       <Card className="mt-4 gap-0">
         <CardHeader>
           <CardDescription className="mb-2">
-            Ou através das minhas redes sociais:
+            {t("contact.socialDescription")}
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-2">
