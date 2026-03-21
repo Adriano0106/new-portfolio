@@ -1,4 +1,6 @@
-import useWindowSize from "../hooks/useWindowSize"
+"use client"
+
+import { useEffect, useState } from "react"
 
 type SectionTitleProps = {
   children: React.ReactNode
@@ -6,12 +8,15 @@ type SectionTitleProps = {
 }
 
 export function Title({ children, sidebarOpen }: SectionTitleProps) {
-  const { width } = useWindowSize()
-  const isMobile = width !== undefined && width <= 767
+  const [mounted, setMounted] = useState(false)
 
-  return (
-    <h1 style={isMobile && !sidebarOpen ? { paddingLeft: "56px" } : {}}>
-      {children}
-    </h1>
-  )
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return <h1>{children}</h1>
+  }
+
+  return <h1 style={!sidebarOpen ? { paddingLeft: "56px" } : {}}>{children}</h1>
 }
