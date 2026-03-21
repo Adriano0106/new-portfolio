@@ -2,7 +2,7 @@ import "./globals.css"
 import "./custom.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { SidebarProvider } from "@/ui/sidebar"
+import { Providers } from "./components/Providers"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -19,8 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex max-w-[1920px] w-full mx-auto relative overflow-x-hidden">
-          <SidebarProvider>{children}</SidebarProvider>
+        <div
+          className="flex max-w-[1920px] w-full mx-auto relative overflow-x-hidden"
+          suppressHydrationWarning
+        >
+          <Providers>{children}</Providers>
         </div>
       </body>
     </html>
