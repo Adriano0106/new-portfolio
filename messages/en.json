@@ -9,9 +9,9 @@
   },
   "presentation": {
     "title": "Adriano Andrade da Silva",
-    "job": "Full Stack Software Engineer",
+    "job": "Senior Full Stack Software Engineer",
     "openToWork": "Open to Senior Full Stack / Front-End roles",
-    "summary": "Software Engineer focused on frontend architecture, React/TypeScript, and AdTech ecosystems. \n\nExperience building high-traffic platforms, design systems, global state management solutions, and automated testing pipelines. \n\nCollaborative background in agile environments across product, UX, and engineering teams.",
+    "summary": "5+ years architecting high-scale frontend systems with React/TypeScript across platforms serving millions of monthly visits.\n\nDeep expertise in component architecture, AdTech integrations, design systems, and performance engineering.\n\nBackground in high-performing agile teams, focused on delivering measurable technical and business impact.",
     "about": "Corinthians fan, music and POP culture enthusiast.",
     "age": "years old",
     "degree": "Bachelor's in Computer Science"
@@ -26,7 +26,7 @@
         "role": "Full Stack Developer",
         "imageUrl": "/logo-uol.png",
         "time": "2020 - currently",
-        "description": "Architecture & High-Impact Frontend\nResponsible for architecting large-scale React/TypeScript applications, focused on componentization, reusability, and maintainability. Defined coding standards, global state management strategies, and module structures for multidisciplinary teams on platforms handling millions of monthly visits.\n\nAdTech & Programmatic Advertising\nDevelopment and integration with Google Ad Manager, Prebid, and proprietary Ad Server infrastructure. Implementation of bidding logic, line item configuration, and ad inventory management across high-traffic portals.\n\nDesign System & Component Architecture\nBuilt and maintained reusable component libraries aligned to design systems, in direct collaboration with UX/UI teams using Figma, Adobe XD, and Zeplin.\n\nPerformance & Quality\nPerformance optimization across high-traffic applications with attention to code splitting, lazy loading, and Web Vitals metrics. Automated testing with Vitest to ensure reliability and code coverage.\n\nAutomation & Internal Systems\nLed the development of UOL's new FAQ system, replacing a third-party solution and significantly reducing operational costs. Built automation tools for bulk publishing of ad campaigns used by Operations teams.",
+        "description": "Architecture & High-Impact Frontend\nArchitected and led the evolution of React/TypeScript applications on platforms handling millions of monthly visits — prioritizing scalability, maintainability, and performance. Defined componentization standards, global state contracts, and module structures for multidisciplinary teams.\n\nAdTech & Programmatic Advertising\nIntegrated Google Ad Manager, Prebid, and proprietary Ad Server infrastructure, implementing bidding logic and ad inventory management across high-traffic portals. Ensured high availability and consistent performance under variable load.\n\nDesign System & Component Architecture\nArchitected reusable component libraries aligned to design systems, collaborating directly with UX/UI teams (Figma, Adobe XD, Zeplin). Reduced visual inconsistencies and accelerated delivery cycles for new interfaces.\n\nPerformance & Quality\nOptimized critical applications with focus on code splitting, lazy loading, and Web Vitals. Implemented automated testing with Vitest, improving reliability and code coverage across large-scale codebases.\n\nAutomation & Internal Systems\nLed development of UOL's new FAQ system, replacing a third-party solution and significantly cutting operational costs. Designed automation tooling for bulk ad campaign publishing, adopted by Operations teams.",
         "techs": [
           "TypeScript",
           "JavaScript",
@@ -60,7 +60,7 @@
         "role": "Trainee / Customer Support Analyst",
         "imageUrl": "/gigaservices-logo.jpg",
         "time": "2018 - 2020",
-        "description": "Interface Development with Ruby on Rails\nCreation and maintenance of views in Ruby on Rails applications, applying JavaScript, jQuery and Bootstrap to ensure functional and responsive interfaces.\n\nFeature and Back-End Implementation\nDevelopment of new features using Ruby, with data manipulation in PostgreSQL database and test coverage with RSpec.\n\nQuality and Support\nCollaboration in application testing and direct customer support, contributing to the identification and resolution of technical issues.",
+        "description": "Interfaces & Full Stack Development\nDeveloped and maintained views in Ruby on Rails, applying JavaScript, jQuery, and Bootstrap to deliver functional and responsive interfaces aligned to product requirements.\n\nBackend & Database\nImplemented new features in Ruby with PostgreSQL and RSpec test coverage, contributing to system stability and continuous evolution.\n\nQuality & Support\nActively collaborated in testing cycles, identifying and resolving technical issues with agility and focus on customer experience.",
         "techs": [
           "Ruby on Rails",
           "Ruby",
@@ -89,30 +89,40 @@
         "emoji": "😎",
         "name": "Portfolio",
         "link": "youAreHere",
-        "problem": "Build an online presence that communicates senior-level engineering, not just a project list.",
-        "solution": "Developed with Next.js and App Router, focused on component isolation, native i18n, and dark mode support.",
-        "techDecisions": "Component-driven architecture; minimal global state via Context API; design system with shadcn/ui and Tailwind for visual consistency.",
-        "outcome": "Bilingual portfolio (PT/EN) with dark mode, responsive sidebar, and sections tailored for technical recruiters.",
-        "techs": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"]
+        "problem": "Build a technical presence that communicates engineering seniority and real decisions — not just a list of technologies used.",
+        "solution": "Architected with Next.js App Router, with full component isolation, native i18n without external dependencies, and dark mode via next-themes.",
+        "techDecisions": "Context API for minimal, predictable global state; shadcn/ui + Tailwind for a consistent design system without overhead; SSR/SSG for performance and SEO from the first request.",
+        "outcome": "Bilingual portfolio (PT/EN) with dark mode, responsive sidebar navigation, and sections designed for the technical eye of senior recruiters and hiring managers.",
+        "techs": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "shadcn/ui"
+        ]
       },
       {
         "emoji": "🏎️",
         "name": "Formula One Database",
         "link": "https://github.com/Adriano0106/Formula-One-Database",
-        "problem": "Lack of a structured, reliable public API with up-to-date Formula 1 data.",
-        "solution": "Designed and implemented a REST API in Node.js with typed, documented endpoints, serving as the backend for the Formula One Next application.",
-        "techDecisions": "Express for its lightweight footprint; TypeScript to enforce strong contracts between endpoints and consumers; layered architecture (routes → controllers → data).",
-        "outcome": "Production API consumed by the frontend application, with an extensible structure for new season data.",
-        "techs": ["Node.js", "Express", "TypeScript"]
+        "problem": "Lack of a structured, typed, and reliable API with up-to-date Formula 1 data to power a real frontend application.",
+        "solution": "Designed and implemented a REST API in Node.js with a layered architecture, typed and documented endpoints — serving as the data contract for the frontend.",
+        "techDecisions": "Express for lightweight control over the request pipeline; TypeScript to enforce explicit contracts between layers; strict separation across routes -> controllers -> data, enabling independent evolution and maintenance.",
+        "outcome": "Production API consumed by Formula One Next, with low layer coupling and an extensible structure for new season data.",
+        "techs": [
+          "Node.js",
+          "Express",
+          "TypeScript"
+        ]
       },
       {
         "emoji": "🏎️",
         "name": "Formula One Next",
         "link": "https://adriano-formulaonenext.netlify.app/",
-        "problem": "Build a rich, performant interface to display Formula 1 data sourced from a custom API.",
-        "solution": "Web application with Next.js using SSR/SSG for performance and SEO, integrating the Formula One Database API.",
-        "techDecisions": "Next.js for hybrid rendering; Styled Components for per-component style isolation; Bootstrap for a responsive grid.",
-        "outcome": "Published application with optimized load time, responsive layout, and efficient API consumption via server-side rendering.",
+        "problem": "Build a rich, performant, and navigable interface for displaying Formula 1 data sourced from a custom API.",
+        "solution": "Next.js application with selective SSR and SSG per route, integrating the Formula One Database API with a focus on performance and SEO.",
+        "techDecisions": "Next.js for per-route hybrid rendering; Styled Components for style isolation without global conflicts; Bootstrap as a responsive grid without adding unnecessary complexity.",
+        "outcome": "Published application with optimized load times, responsive layout, and a clear separation between data and presentation via server-side rendering.",
         "techs": [
           "Next.js",
           "React",
@@ -132,37 +142,37 @@
   },
   "mindset": {
     "title": "Engineering Mindset",
-    "subtitle": "How I approach technical problems and architecture decisions day-to-day.",
+    "subtitle": "How I approach technical problems, architecture decisions, and systems engineering day-to-day.",
     "items": [
       {
         "icon": "",
         "title": "Architecture before code",
-        "description": "Before jumping into code, I like to think about how the system can grow without turning into a mess. I separate concerns and try to spot future pain points early."
+        "description": "Before writing any line, I evaluate design trade-offs: separation of concerns, contracts between layers, and how the solution holds up as the system grows."
       },
       {
         "icon": "",
-        "title": "Performance as a requirement",
-        "description": "Performance isn’t an afterthought. From the start, I split code, load only what’s needed, and keep an eye on speed so the site never feels slow."
+        "title": "Performance as a requirement, not an afterthought",
+        "description": "Performance is part of the design from day one. Code splitting, lazy loading, selective memoization, and continuous Web Vitals monitoring are built into development — not patched in later."
       },
       {
         "icon": "",
         "title": "Design System & Componentization",
-        "description": "I prefer building reusable components with predictable behavior, so I don’t have to reinvent the wheel for every new screen."
+        "description": "Components are contracts. I prioritize reusable primitives with a clear API, predictable behavior, and design system alignment — reducing rework and accelerating delivery."
       },
       {
         "icon": "",
-        "title": "Strong typing and explicit contracts",
-        "description": "I use TypeScript to make it clear what each part of the system expects and returns. It prevents silly mistakes and makes maintenance easier."
+        "title": "Strong typing as a design tool",
+        "description": "TypeScript is not just about preventing bugs — it is living documentation of the system. Well-defined types communicate intent, reduce friction in code reviews, and make large-scale refactors safe."
       },
       {
         "icon": "",
         "title": "Testability as a design criterion",
-        "description": "I like writing tests that actually check what matters. Code that’s easy to test is usually well-structured code."
+        "description": "Hard-to-test code is a design smell. I write tests that validate behavior, not implementation — using coverage as a quality signal, not a target."
       },
       {
         "icon": "",
-        "title": "Documentation is part of the product",
-        "description": "Documenting decisions and standards helps the whole team and makes life easier for anyone joining later."
+        "title": "Documentation scales knowledge",
+        "description": "Well-written ADRs, READMEs, and API contracts multiply team knowledge. Good documentation reduces onboarding cost and increases delivery velocity."
       }
     ]
   }
