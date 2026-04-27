@@ -76,24 +76,48 @@
     "title": "Projetos",
     "visit": "Ver Projeto",
     "youAreHere": "Você está aqui",
+    "labels": {
+      "problem": "Contexto",
+      "solution": "Solução",
+      "techDecisions": "Decisões Técnicas",
+      "outcome": "Resultado"
+    },
     "items": [
       {
         "emoji": "😎",
         "name": "Portfólio",
         "link": "youAreHere",
-        "description": "Aplicação desenvolvida em Next.js para apresentação de informações profissionais, habilidades técnicas, experiências e projetos. Tecnologias: Next.js, React, Tailwind CSS, TypeScript, shadcn/ui."
+        "problem": "Criar uma presença online que comunicasse senioridade técnica, não apenas uma lista de projetos.",
+        "solution": "Desenvolvido com Next.js e App Router, com foco em componentização, i18n nativo e suporte a dark mode.",
+        "techDecisions": "Arquitetura baseada em componentes isolados; estado global mínimo via Context API; design system com shadcn/ui e Tailwind para consistência visual.",
+        "outcome": "Portfólio bilíngue (PT/EN), dark mode, sidebar responsiva e seções estruturadas para recrutadores técnicos.",
+        "techs": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"]
       },
       {
         "emoji": "🏎️",
         "name": "Formula One Database",
         "link": "https://github.com/Adriano0106/Formula-One-Database",
-        "description": "API desenvolvida em Node.js para fornecer dados estruturados sobre pilotos e equipes de Fórmula 1, utilizada pela aplicação Formula One Next. Tecnologias: Node.js, Express, TypeScript."
+        "problem": "Ausência de uma API pública estruturada e confiável com dados atualizados de Fórmula 1.",
+        "solution": "Projetada e implementada uma REST API em Node.js com endpoints tipados e documentados, servindo como backend para a aplicação Formula One Next.",
+        "techDecisions": "Express como framework HTTP por sua leveza; TypeScript para contrato forte entre endpoints e consumidores; estrutura em camadas (routes → controllers → data).",
+        "outcome": "API funcional consumida em produção pela aplicação frontend, com estrutura extensível para novos dados de temporada.",
+        "techs": ["Node.js", "Express", "TypeScript"]
       },
       {
         "emoji": "🏎️",
         "name": "Formula One Next",
         "link": "https://adriano-formulaonenext.netlify.app/",
-        "description": "Aplicação web desenvolvida em Next.js que apresenta informações sobre pilotos e equipes da Fórmula 1 a partir de uma API própria. Tecnologias: Next.js, React, TypeScript, Styled Components, Bootstrap."
+        "problem": "Criar uma interface rica e performática para visualização de dados de Fórmula 1 consumindo a API própria.",
+        "solution": "Aplicação web com Next.js utilizando SSR/SSG para performance e SEO, integrando a Formula One Database API.",
+        "techDecisions": "Next.js para renderização híbrida; Styled Components para isolamento de estilos por componente; Bootstrap para grid responsivo.",
+        "outcome": "Aplicação publicada com carregamento otimizado, layout responsivo e consumo eficiente da API via server-side rendering.",
+        "techs": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Styled Components",
+          "Bootstrap"
+        ]
       }
     ]
   },
