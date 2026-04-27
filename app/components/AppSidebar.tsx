@@ -3,6 +3,7 @@ import * as Collapsible from "@radix-ui/react-collapsible"
 import { Button } from "@/ui/button"
 import { useIsMobile } from "@/hooks/use-mobile"
 import { LanguageToggle } from "./LanguageToggle"
+import { ThemeToggle } from "./ThemeToggle"
 import { useI18n } from "../context/I18nContext"
 
 type SectionKey =
@@ -75,6 +76,7 @@ export function AppSidebar({
         </div>
 
         <LanguageToggle />
+        <ThemeToggle />
 
         <Collapsible.Content
           forceMount
