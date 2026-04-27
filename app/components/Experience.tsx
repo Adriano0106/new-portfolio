@@ -63,7 +63,7 @@ const Experience = ({ sidebarOpen }: ExperienceProps) => {
         }}
       />
 
-      <ul role="list" className="divide-y divide-gray-100">
+      <ul role="list" className="divide-y divide-zinc-100 dark:divide-zinc-800">
         {showJobs.map((job) => (
           <li key={job.name} className={`${sharedClasses} ${conditionalClass}`}>
             <div className="flex min-w-0 gap-x-4">
@@ -72,18 +72,18 @@ const Experience = ({ sidebarOpen }: ExperienceProps) => {
                 width={100}
                 height={100}
                 alt={job.name}
-                className="h-12 w-12 flex-none rounded-full bg-gray-50"
+                className="h-12 w-12 flex-none rounded-full bg-gray-50 dark:bg-zinc-800"
                 style={{ borderRadius: "50%" }}
               />
               <div className="min-w-0 flex-auto">
-                <p className="text-sm font-semibold leading-6 text-gray-900">
+                <p className="text-sm font-semibold leading-6 text-zinc-900 dark:text-zinc-100">
                   {job.name}
                 </p>
-                <p className="mt-1 text-sm leading-5 text-gray-500 display-linebreak">
+                <p className="mt-1 text-sm leading-5 text-zinc-500 dark:text-zinc-400 display-linebreak">
                   {job.description}
                 </p>
                 <br />
-                <p className="text-sm font-semibold leading-6 text-gray-900">
+                <p className="text-sm font-semibold leading-6 text-zinc-900 dark:text-zinc-100">
                   {t("experience.usedTechs")}
                 </p>
                 {job.techs.map((tech, i) => (
@@ -100,8 +100,8 @@ const Experience = ({ sidebarOpen }: ExperienceProps) => {
               className="shrink-0 sm:flex sm:flex-col md:items-end"
               style={{ marginBottom: "1rem" }}
             >
-              <p className="text-sm leading-6 text-gray-900">{job.role}</p>
-              <p className="mt-1 text-xs leading-5 text-gray-500">
+              <p className="text-sm leading-6 text-zinc-900 dark:text-zinc-100">{job.role}</p>
+              <p className="mt-1 text-xs leading-5 text-zinc-500 dark:text-zinc-400">
                 <time>{job.time}</time>
               </p>
             </div>
