@@ -8,7 +8,8 @@
   },
   "presentation": {
     "title": "Adriano Andrade da Silva",
-    "job": "Desenvolvedor Full Stack",
+    "job": "Engenheiro de Software Full Stack",
+    "summary": "Engenheiro de Software com foco em arquitetura frontend, React/TypeScript e ecossistemas AdTech. \n\nExperiência em plataformas de alto tráfego, design systems, gerenciamento de estado global e testes automatizados.\n\nAtuação colaborativa em ambientes ágeis com times de produto, UX e engenharia.",
     "about": "Corinthiano, fã de música e cultura POP.",
     "age": "anos",
     "degree": "Bacharel em Ciência da Computação"
@@ -23,7 +24,7 @@
         "role": "Desenvolvedor Full Stack",
         "imageUrl": "/logo-uol.png",
         "time": "2020 - atualmente",
-        "description": "APIs\nDesenvolvimento de APIs, com foco em fornecer dados para que os mesmos sejam utilizados por diversos sistemas e áreas da empresa.\n\nAutomação de Publicações em Plataformas de Publicidade\nCriação de scripts para publicação e atualização em lote nas plataformas de gerenciamento de anúncios utilizadas pela equipe de Operação.\n\nCriação de Publicidades\nDesenvolvimento de peças publicitárias para exibição no UOL e em sites parceiros com animações CSS.\n\nDesenvolvimento de Sites e Sistemas Internos\nResponsável pelo desenvolvimento de sites para novas publicações.\nResponsável pela criação do novo sistema de FAQ de diversas áreas do UOL.\nDesenvolvimento de ferramentas de automação para importação e atualização de conteúdos em lote.\n\nSistema de Controle de Acesso de Usuários\nDesenvolvimento de um sistema interno para gerenciamento de acessos, com interface intuitiva e integração com banco de dados relacional.",
+        "description": "Arquitetura & Frontend de Alto Impacto\nResponsável pela arquitetura de aplicações React/TypeScript de grande escala, com foco em componentização, reusabilidade e manutenibilidade. Definição de padrões de código, estratégias de gerenciamento de estado global e estrutura de módulos para times multidisciplinares em plataformas com milhões de acessos mensais.\n\nAdTech & Publicidade Programática\nDesenvolvimento e integração com Google Ad Manager, Prebid e infraestrutura proprietária de Ad Server. Implementação de lógica de bidding, configuração de line items e gerenciamento de inventário publicitário em portais de alto tráfego.\n\nDesign System & Componentização\nCriação e manutenção de bibliotecas de componentes reutilizáveis alinhadas a design systems, em colaboração direta com times de UX/UI a partir de Figma, Adobe XD e Zeplin.\n\nPerformance & Qualidade\nOtimização de performance em aplicações de alto tráfego, com atenção a code splitting, lazy loading e métricas de Web Vitals. Escrita de testes automatizados com Vitest, garantindo confiabilidade e cobertura de código.\n\nAutomação & Sistemas Internos\nLiderança no desenvolvimento do novo sistema de FAQ do UOL, substituindo solução terceirizada e reduzindo significativamente os custos operacionais. Criação de ferramentas de automação para publicação e atualização em lote de campanhas publicitárias.",
         "techs": [
           "TypeScript",
           "JavaScript",
@@ -53,7 +54,7 @@
       },
       {
         "name": "Gigaservices",
-        "role": "Trainee",
+        "role": "Trainee / Analista de Suporte",
         "imageUrl": "/gigaservices-logo.jpg",
         "time": "2018 - 2020",
         "description": "Desenvolvimento de Interfaces com Ruby on Rails\nCriação e manutenção de views em aplicações Ruby on Rails, aplicando JavaScript, jQuery e Bootstrap para garantir interfaces funcionais e responsivas.\n\nImplementação de Funcionalidades e Back-End\nDesenvolvimento de novas funcionalidades utilizando Ruby, com manipulação de dados em banco PostgreSQL e cobertura de testes com RSpec.\n\nAtuação em Qualidade e Suporte\nColaboração nos testes de aplicações e no suporte direto ao cliente, contribuindo para a identificação e resolução de problemas técnicos.",
@@ -79,19 +80,19 @@
         "emoji": "😎",
         "name": "Portfólio",
         "link": "youAreHere",
-        "description": "Projeto desenvolvido em Next com TypeScript utilizando Tailwind e Shadcn."
+        "description": "Aplicação desenvolvida em Next.js para apresentação de informações profissionais, habilidades técnicas, experiências e projetos. Tecnologias: Next.js, React, Tailwind CSS, TypeScript, shadcn/ui."
       },
       {
         "emoji": "🏎️",
         "name": "Formula One Database",
         "link": "https://github.com/Adriano0106/Formula-One-Database",
-        "description": "API desenvolvida em Node.js e express."
+        "description": "API desenvolvida em Node.js para fornecer dados estruturados sobre pilotos e equipes de Fórmula 1, utilizada pela aplicação Formula One Next. Tecnologias: Node.js, Express, TypeScript."
       },
       {
         "emoji": "🏎️",
         "name": "Formula One Next",
         "link": "https://adriano-formulaonenext.netlify.app/",
-        "description": "Projeto desenvolvido em Next com TypeScript utilizando Bootstrap, Styled Components e consumindo a API do projeto acima."
+        "description": "Aplicação web desenvolvida em Next.js que apresenta informações sobre pilotos e equipes da Fórmula 1 a partir de uma API própria. Tecnologias: Next.js, React, TypeScript, Styled Components, Bootstrap."
       }
     ]
   },
