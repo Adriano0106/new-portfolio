@@ -11,7 +11,7 @@
     "title": "Adriano Andrade da Silva",
     "job": "Engenheiro de Software Sênior Full Stack",
     "openToWork": "Aberto a oportunidades Sênior Full Stack / Front-End",
-    "summary": "Mais de 5 anos arquitetando sistemas frontend de alta escala com React/TypeScript em plataformas com milhões de acessos mensais.\n\nEspecialização em arquitetura de componentes, AdTech, design systems e engenharia de performance.\n\nHistórico em times ágeis de alto desempenho, com foco em impacto técnico e de negócio.",
+    "summary": "7 anos de experiência em desenvolvimento de software, sendo cerca de 3 anos atuando como arquiteto de sistemas frontend com React/TypeScript, focado em plataformas de grande escala e alto tráfego.\n\nEspecialista em arquitetura de componentes, AdTech, design systems e engenharia de performance.\n\nExperiência em times ágeis de alto desempenho, sempre buscando impacto técnico e de negócio.",
     "about": "Corinthiano, fã de música e cultura POP.",
     "age": "anos",
     "degree": "Bacharel em Ciência da Computação"
@@ -27,6 +27,7 @@
         "imageUrl": "/logo-uol.png",
         "time": "2020 - atualmente",
         "description": "Arquitetura & Frontend de Alto Impacto\nArquitetou e liderou a evolução de aplicações React/TypeScript em plataformas com milhões de acessos mensais, priorizando escalabilidade, manutenibilidade e performance. Definiu padrões de componentização, contratos de estado global e estrutura de módulos para times multidisciplinares.\n\nAdTech & Publicidade Programática\nIntegrou Google Ad Manager, Prebid e Ad Server proprietário, implementando lógica de bidding e gestão de inventário publicitário em portais de alto tráfego. Garantiu alta disponibilidade e performance consistente sob carga variável.\n\nDesign System & Componentização\nArquitetou bibliotecas de componentes reutilizáveis alinhadas a design systems, em colaboração direta com UX/UI (Figma, Adobe XD, Zeplin). Reduziu inconsistências visuais e acelerou ciclos de entrega de novas interfaces.\n\nPerformance & Qualidade\nOtimizou aplicações críticas com foco em code splitting, lazy loading e Web Vitals. Implementou testes automatizados com Vitest, elevando a confiabilidade e cobertura de código em bases de grande escala.\n\nAutomação & Sistemas Internos\nLiderou o desenvolvimento do novo sistema de FAQ do UOL, substituindo solução terceirizada e reduzindo significativamente custos operacionais. Projetou ferramentas de automação para publicação em lote de campanhas, adotadas pelo time de operações.",
+        "description": "Arquitetura & Frontend de Alto Impacto\nArquitetou e liderou a evolução de aplicações React/TypeScript em plataformas com milhões de acessos mensais, priorizando escalabilidade, manutenibilidade e performance. Definiu padrões de componentização, contratos de estado global e estrutura de módulos para times multidisciplinares.\n\nAdTech & Publicidade Programática\nIntegrou Google Ad Manager, Prebid e Ad Server proprietário, implementando lógica de bidding e gestão de inventário publicitário em portais de alto tráfego. Garantiu alta disponibilidade e performance consistente sob carga variável.\n\nDesign System & Componentização\nArquitetou bibliotecas de componentes reutilizáveis alinhadas a design systems, em colaboração direta com UX/UI (Figma, Adobe XD, Zeplin). Reduziu inconsistências visuais e acelerou ciclos de entrega de novas interfaces.\n\nColaboração entre times\nAtuação próxima com times de Dados (Analytics), times de Back End de outras áreas da empresa e com o time de Infraestrutura, garantindo integração robusta, alinhamento técnico e entrega de soluções completas.\n\nPerformance & Qualidade\nOtimizou aplicações críticas com foco em code splitting, lazy loading e Web Vitals. Implementou testes automatizados com Vitest, elevando a confiabilidade e cobertura de código em bases de grande escala.\n\nAutomação & Sistemas Internos\nLiderou o desenvolvimento do novo sistema de FAQ do UOL, substituindo solução terceirizada e reduzindo significativamente custos operacionais. Projetou ferramentas de automação para publicação em lote de campanhas, adotadas pelo time de operações.",
         "techs": [
           "TypeScript",
           "JavaScript",
@@ -93,13 +94,7 @@
         "solution": "Arquitetado com Next.js App Router, com isolamento total de componentes, i18n nativo sem dependências externas e dark mode via next-themes.",
         "techDecisions": "Context API para estado global mínimo e previsível; shadcn/ui + Tailwind para um design system consistente sem overhead; SSR/SSG para performance e SEO desde o primeiro acesso.",
         "outcome": "Portfólio bilíngue (PT/EN) com dark mode, navegação por sidebar responsiva e seções orientadas ao olhar técnico de recrutadores e hiring managers.",
-        "techs": [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "Tailwind CSS",
-          "shadcn/ui"
-        ]
+        "techs": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"]
       },
       {
         "emoji": "🏎️",
@@ -109,11 +104,7 @@
         "solution": "Projetada e implementada uma REST API em Node.js com arquitetura em camadas, endpoints tipados e documentados — servindo como contrato de dados para o frontend.",
         "techDecisions": "Express pela leveza e controle total sobre o pipeline de requisições; TypeScript para contratos explícitos entre camadas; separação estrita em routes -> controllers -> data, facilitando evolução e manutenção independente.",
         "outcome": "API em produção consumida pela aplicação Formula One Next, com baixo acoplamento entre camadas e estrutura extensível para novos dados de temporada.",
-        "techs": [
-          "Node.js",
-          "Express",
-          "TypeScript"
-        ]
+        "techs": ["Node.js", "Express", "TypeScript"]
       },
       {
         "emoji": "🏎️",
