@@ -55,14 +55,14 @@ export function AppSidebar({
         className="
     z-40 flex flex-col border-r border-zinc-200 bg-white p-4
     dark:border-zinc-800 dark:bg-zinc-900
-    absolute top-0 left-0 transition-all w-screen h-[100vh]
+    fixed top-0 left-0 transition-all w-screen h-[100vh]
     mr-[10px] shadow-md overflow-hidden
     data-[state=closed]:-translate-x-[100vw] data-[state=closed]:w-0
     lg:w-64 lg:h-[calc(100vh-1rem)] lg:my-2 lg:ml-2 lg:rounded-2xl lg:shadow-md lg:mr-0
   "
       >
         <div className="flex items-center justify-between mb-6">
-          <span className="text-2xl font-bold">Adriano Andrade</span>
+          <span className="text-2xl font-bold">Adriano</span>
           <Collapsible.Trigger asChild>
             <Button
               variant="secondary"

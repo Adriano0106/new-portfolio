@@ -67,8 +67,19 @@ const Presentation = () => {
           </div>
         </CardHeader>
         <CardContent>
-          <p className="mt-2 text-gray-600">{t("presentation.degree")}</p>
-          <p className="mt-2 text-gray-600">{t("presentation.about")}</p>
+          <p className="mt-2 text-gray-600 text-sm">
+            {t("presentation.degree")}
+          </p>
+          {(t("presentation.summary") as string)
+            .split(/\n\n+/)
+            .map((paragraph, idx) => (
+              <p key={idx} className="mt-4 text-gray-600 leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
+          <p className="mt-3 text-gray-400 text-sm">
+            {t("presentation.about")}
+          </p>
         </CardContent>
       </Card>
     </section>
