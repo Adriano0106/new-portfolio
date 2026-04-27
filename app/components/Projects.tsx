@@ -23,6 +23,12 @@ type Project = {
   description: string
 }
 
+const extractTechs = (description: string) => {
+  const match = description.match(/Tecnologias: (.+)\.?$/i)
+  if (!match) return []
+  return match[1].split(/, ?/).map((t) => t.replace(/\.$/, ""))
+}
+
 const Projects = ({ sidebarOpen }: ProjectProps) => {
   const { t } = useI18n()
   const projects: Project[] = t("projects.items") as unknown as Project[]
@@ -49,7 +55,21 @@ const Projects = ({ sidebarOpen }: ProjectProps) => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription>{project.description}</CardDescription>
+              <CardDescription>
+                {project.description.replace(/Tecnologias: .+$/i, "").trim()}
+              </CardDescription>
+              {extractTechs(project.description).length > 0 && (
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {extractTechs(project.description).map((tech, i) => (
+                    <span
+                      key={i}
+                      className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-3 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              )}
             </CardContent>
             <CardFooter>
               {project.link !== "youAreHere" && (
