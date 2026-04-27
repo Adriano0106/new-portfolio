@@ -1,16 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import styles from "./../styles/footer.module.css"
-import { FaGithub, FaLinkedin } from "react-icons/fa"
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardFooter,
-} from "@/ui/card"
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 import { Title } from "./Title"
 import { useI18n } from "../context/I18nContext"
 
@@ -28,59 +19,59 @@ const Contact = ({ sidebarOpen }: ContactProps) => {
       className="px-2 sm:px-6 lg:px-8 scroll-pt-navbar py-4"
     >
       <Title sidebarOpen={sidebarOpen}>{t("contact.title")}</Title>
-      <Card className="gap-0">
-        <CardHeader>
-          <CardDescription>{t("contact.emailDescription")}</CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-2">
-          <CardDescription>
-            <a
-              href="mailto:adriano.andrade.silva@hotmail.com"
-              className="text-blue-500 hover:underline"
-            >
-              adriano.andrade.silva@hotmail.com
-            </a>
-          </CardDescription>
-          <CardDescription>
-            <a
-              href="mailto:hey.adriano@outlook.com"
-              className="text-blue-500 hover:underline"
-            >
-              hey.adriano@outlook.com
-            </a>
-          </CardDescription>
-        </CardContent>
-      </Card>
 
-      <Card className="mt-4 gap-0">
-        <CardHeader>
-          <CardDescription className="mb-2">
-            {t("contact.socialDescription")}
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-2">
-          <CardDescription>
-            <Link
-              href="https://www.linkedin.com/in/adrianoa1/"
-              className="flex items-center gap-2 text-blue-500 hover:underline"
-              target="_blank"
-            >
-              <FaLinkedin className={`${styles.iconLinkedin} text-gray-700`} />
-              LinkedIn
-            </Link>
-          </CardDescription>
-          <CardDescription>
-            <Link
-              href="https://github.com/Adriano0106"
-              className="flex items-center gap-2 text-blue-500 hover:underline"
-              target="_blank"
-            >
-              <FaGithub className={`${styles.iconGithub} text-gray-700`} />
-              Github
-            </Link>
-          </CardDescription>
-        </CardContent>
-      </Card>
+      {/* CTA block */}
+      <div className="mb-8 p-6 rounded-2xl border border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950/30">
+        <h2 className="text-2xl font-bold text-zinc-800 dark:text-zinc-100 mb-2">
+          {t("contact.cta")}
+        </h2>
+        <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-xl">
+          {t("contact.ctaDescription")}
+        </p>
+      </div>
+
+      {/* Links */}
+      <div className="flex flex-col gap-3 max-w-sm">
+        <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wide">
+          {t("contact.emailDescription")}
+        </p>
+        <Link
+          href="mailto:adriano.andrade.silva@hotmail.com"
+          className="flex items-center gap-3 px-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 transition-colors text-sm text-zinc-700 dark:text-zinc-300"
+        >
+          <FaEnvelope className="text-red-500 shrink-0" />
+          adriano.andrade.silva@hotmail.com
+        </Link>
+        <Link
+          href="mailto:hey.adriano@outlook.com"
+          className="flex items-center gap-3 px-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 transition-colors text-sm text-zinc-700 dark:text-zinc-300"
+        >
+          <FaEnvelope className="text-red-500 shrink-0" />
+          hey.adriano@outlook.com
+        </Link>
+
+        <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wide mt-2">
+          {t("contact.socialDescription")}
+        </p>
+        <Link
+          href="https://www.linkedin.com/in/adrianoa1/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 px-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 transition-colors text-sm text-zinc-700 dark:text-zinc-300"
+        >
+          <FaLinkedin className="text-blue-600 shrink-0" />
+          linkedin.com/in/adrianoa1
+        </Link>
+        <Link
+          href="https://github.com/Adriano0106"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 px-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 transition-colors text-sm text-zinc-700 dark:text-zinc-300"
+        >
+          <FaGithub className="text-zinc-800 dark:text-zinc-100 shrink-0" />
+          github.com/Adriano0106
+        </Link>
+      </div>
     </section>
   )
 }

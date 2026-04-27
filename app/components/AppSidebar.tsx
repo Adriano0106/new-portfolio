@@ -10,7 +10,7 @@ type SectionKey =
   | "presentation"
   | "experience"
   | "projects"
-  // | "hobbies"
+  | "mindset"
   | "contact"
 
 type Props = {
@@ -33,7 +33,7 @@ export function AppSidebar({
     { name: t("navigation.presentation"), key: "presentation" },
     { name: t("navigation.experience"), key: "experience" },
     { name: t("navigation.projects"), key: "projects" },
-    // { name: t("navigation.hobbies"), key: "hobbies" },
+    { name: t("navigation.mindset"), key: "mindset" },
     { name: t("navigation.contact"), key: "contact" },
   ]
   return (

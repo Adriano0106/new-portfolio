@@ -3,6 +3,7 @@
     "presentation": "Presentation",
     "experience": "Experience",
     "projects": "Projects",
+    "mindset": "Mindset",
     "hobbies": "Hobbies",
     "contact": "Contact"
   },
@@ -117,7 +118,45 @@
   },
   "contact": {
     "title": "Contact",
-    "emailDescription": "You can reach me through the emails:",
-    "socialDescription": "Or through my social networks:"
+    "cta": "Let's work together.",
+    "ctaDescription": "I'm open to Senior Full Stack or Front-End Software Engineer opportunities. If you have an interesting technical challenge or a team that values architecture and code quality — let's talk.",
+    "emailDescription": "Email:",
+    "socialDescription": "Social:"
+  },
+  "mindset": {
+    "title": "Engineering Mindset",
+    "subtitle": "How I approach technical problems and architecture decisions day-to-day.",
+    "items": [
+      {
+        "icon": "🏗️",
+        "title": "Architecture before code",
+        "description": "Before writing code, I analyze design trade-offs — componentization, separation of concerns, and how the solution will evolve over time."
+      },
+      {
+        "icon": "⚡",
+        "title": "Performance as a requirement",
+        "description": "Performance is not an afterthought. Code splitting, lazy loading, memoization, and Web Vitals monitoring are part of development from the start."
+      },
+      {
+        "icon": "🧩",
+        "title": "Design System & Componentization",
+        "description": "Components are contracts. I build interfaces from reusable primitives with a clear API and predictable behavior, aligned to the product's design system."
+      },
+      {
+        "icon": "🔒",
+        "title": "Strong typing and explicit contracts",
+        "description": "TypeScript is a design tool. Well-defined types reduce bugs, document intent, and make large-scale refactors safe."
+      },
+      {
+        "icon": "🧪",
+        "title": "Testability as a design criterion",
+        "description": "Testable code is well-structured code. I write tests that validate behavior, not implementation, and use coverage as an indicator — not a goal."
+      },
+      {
+        "icon": "🔗",
+        "title": "Integration and API contracts",
+        "description": "APIs are boundaries. I design integrations with explicit contracts, consistent error handling, and a clear separation between transport and business logic."
+      }
+    ]
   }
 }
