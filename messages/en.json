@@ -30,12 +30,13 @@
         "techs": [
           "TypeScript",
           "JavaScript",
-          "ReactJS",
+          "React",
           "NextJS",
           "NodeJs",
           "Express",
           "Knex",
           "Prisma",
+          "Drizzle",
           "Vitest",
           "PHP",
           "Sass (Scss)",
@@ -112,14 +113,20 @@
         "solution": "Web application with Next.js using SSR/SSG for performance and SEO, integrating the Formula One Database API.",
         "techDecisions": "Next.js for hybrid rendering; Styled Components for per-component style isolation; Bootstrap for a responsive grid.",
         "outcome": "Published application with optimized load time, responsive layout, and efficient API consumption via server-side rendering.",
-        "techs": ["Next.js", "React", "TypeScript", "Styled Components", "Bootstrap"]
+        "techs": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Styled Components",
+          "Bootstrap"
+        ]
       }
     ]
   },
   "contact": {
     "title": "Contact",
-    "cta": "Let's work together.",
-    "ctaDescription": "I'm open to Senior Full Stack or Front-End Software Engineer opportunities. If you have an interesting technical challenge or a team that values architecture and code quality — let's talk.",
+    "cta": "Contact information",
+    "ctaDescription": "Feel free to reach out via email or social media below.",
     "emailDescription": "Email:",
     "socialDescription": "Social:"
   },
@@ -128,34 +135,34 @@
     "subtitle": "How I approach technical problems and architecture decisions day-to-day.",
     "items": [
       {
-        "icon": "🏗️",
+        "icon": "",
         "title": "Architecture before code",
-        "description": "Before writing code, I analyze design trade-offs — componentization, separation of concerns, and how the solution will evolve over time."
+        "description": "Before jumping into code, I like to think about how the system can grow without turning into a mess. I separate concerns and try to spot future pain points early."
       },
       {
-        "icon": "⚡",
+        "icon": "",
         "title": "Performance as a requirement",
-        "description": "Performance is not an afterthought. Code splitting, lazy loading, memoization, and Web Vitals monitoring are part of development from the start."
+        "description": "Performance isn’t an afterthought. From the start, I split code, load only what’s needed, and keep an eye on speed so the site never feels slow."
       },
       {
-        "icon": "🧩",
+        "icon": "",
         "title": "Design System & Componentization",
-        "description": "Components are contracts. I build interfaces from reusable primitives with a clear API and predictable behavior, aligned to the product's design system."
+        "description": "I prefer building reusable components with predictable behavior, so I don’t have to reinvent the wheel for every new screen."
       },
       {
-        "icon": "🔒",
+        "icon": "",
         "title": "Strong typing and explicit contracts",
-        "description": "TypeScript is a design tool. Well-defined types reduce bugs, document intent, and make large-scale refactors safe."
+        "description": "I use TypeScript to make it clear what each part of the system expects and returns. It prevents silly mistakes and makes maintenance easier."
       },
       {
-        "icon": "🧪",
+        "icon": "",
         "title": "Testability as a design criterion",
-        "description": "Testable code is well-structured code. I write tests that validate behavior, not implementation, and use coverage as an indicator — not a goal."
+        "description": "I like writing tests that actually check what matters. Code that’s easy to test is usually well-structured code."
       },
       {
-        "icon": "🔗",
-        "title": "Integration and API contracts",
-        "description": "APIs are boundaries. I design integrations with explicit contracts, consistent error handling, and a clear separation between transport and business logic."
+        "icon": "",
+        "title": "Documentation is part of the product",
+        "description": "Documenting decisions and standards helps the whole team and makes life easier for anyone joining later."
       }
     ]
   }

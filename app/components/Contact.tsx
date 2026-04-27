@@ -20,15 +20,7 @@ const Contact = ({ sidebarOpen }: ContactProps) => {
     >
       <Title sidebarOpen={sidebarOpen}>{t("contact.title")}</Title>
 
-      {/* CTA block */}
-      <div className="mb-8 p-6 rounded-2xl border border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950/30">
-        <h2 className="text-2xl font-bold text-zinc-800 dark:text-zinc-100 mb-2">
-          {t("contact.cta")}
-        </h2>
-        <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-xl">
-          {t("contact.ctaDescription")}
-        </p>
-      </div>
+      {/* Apenas informações de contato, sem CTA */}
 
       {/* Links */}
       <div className="flex flex-col gap-3 max-w-sm">

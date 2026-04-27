@@ -8,7 +8,11 @@ export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
       <I18nProvider>
-        <SidebarProvider>{children}</SidebarProvider>
+        <SidebarProvider>
+          <div className="flex max-w-[1920px] w-full mx-auto relative overflow-x-hidden">
+            {children}
+          </div>
+        </SidebarProvider>
       </I18nProvider>
     </ThemeProvider>
   )

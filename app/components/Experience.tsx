@@ -57,7 +57,7 @@ const Experience = ({ sidebarOpen }: ExperienceProps) => {
         onChange={(e) => {
           const filter = e.target.value.toLowerCase()
           const filteredJobs = jobs.filter((job) =>
-            job.techs.some((tech) => tech.toLowerCase().includes(filter))
+            job.techs.some((tech) => tech.toLowerCase().includes(filter)),
           )
           filter === "" ? setShowJobs(jobs) : setShowJobs(filteredJobs)
         }}
@@ -100,7 +100,9 @@ const Experience = ({ sidebarOpen }: ExperienceProps) => {
               className="shrink-0 sm:flex sm:flex-col md:items-end"
               style={{ marginBottom: "1rem" }}
             >
-              <p className="text-sm leading-6 text-zinc-900 dark:text-zinc-100">{job.role}</p>
+              <p className="text-sm leading-6 text-zinc-900 dark:text-zinc-100">
+                {job.role}
+              </p>
               <p className="mt-1 text-xs leading-5 text-zinc-500 dark:text-zinc-400">
                 <time>{job.time}</time>
               </p>

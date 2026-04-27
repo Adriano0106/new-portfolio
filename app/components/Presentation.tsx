@@ -33,14 +33,6 @@ const Presentation = () => {
       className="scroll-pt-navbar py-10 flex items-center justify-center min-h-[80vh]"
     >
       <div className="w-full max-w-3xl mx-4">
-        {/* CTA Badge */}
-        <div className="flex justify-center md:justify-start mb-6">
-          <span className="inline-flex items-center gap-2 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-700 text-xs font-semibold px-4 py-1.5 rounded-full">
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            {t("presentation.openToWork")}
-          </span>
-        </div>
-
         {/* Hero */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
           <Image
@@ -58,9 +50,13 @@ const Presentation = () => {
               {t("presentation.job")}
             </p>
             <div className="flex flex-wrap gap-3 text-zinc-500 dark:text-zinc-400 text-sm mt-1">
-              <span>{age} {t("presentation.age")}</span>
+              <span>
+                {age} {t("presentation.age")}
+              </span>
               <span>•</span>
-              <span>{city}, {state}</span>
+              <span>
+                {city}, {state}
+              </span>
               <span>•</span>
               <span>{t("presentation.degree")}</span>
             </div>
@@ -72,7 +68,10 @@ const Presentation = () => {
           {(t("presentation.summary") as string)
             .split(/\n\n+/)
             .map((paragraph, idx) => (
-              <p key={idx} className="text-zinc-600 dark:text-zinc-300 leading-relaxed">
+              <p
+                key={idx}
+                className="text-zinc-600 dark:text-zinc-300 leading-relaxed"
+              >
                 {paragraph.trim()}
               </p>
             ))}

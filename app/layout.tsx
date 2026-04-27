@@ -19,12 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <div
-          className="flex max-w-[1920px] w-full mx-auto relative overflow-x-hidden"
-          suppressHydrationWarning
-        >
-          <Providers>{children}</Providers>
-        </div>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

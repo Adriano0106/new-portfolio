@@ -30,12 +30,13 @@
         "techs": [
           "TypeScript",
           "JavaScript",
-          "ReactJS",
+          "React",
           "NextJS",
           "NodeJs",
           "Express",
           "Knex",
           "Prisma",
+          "Drizzle",
           "Vitest",
           "PHP",
           "Sass (Scss)",
@@ -124,8 +125,8 @@
   },
   "contact": {
     "title": "Contato",
-    "cta": "Vamos conversar?",
-    "ctaDescription": "Estou disponível para oportunidades de Engenheiro de Software Sênior Full Stack ou Front-End. Se você tem um desafio técnico interessante ou uma equipe que valoriza arquitetura e qualidade de código — entre em contato.",
+    "cta": "Informações de contato",
+    "ctaDescription": "Fique à vontade para entrar em contato pelo e-mail ou pelas redes sociais abaixo.",
     "emailDescription": "Email:",
     "socialDescription": "Redes sociais:"
   },
@@ -134,34 +135,34 @@
     "subtitle": "Como abordo problemas técnicos e decisões de arquitetura no dia a dia.",
     "items": [
       {
-        "icon": "🏗️",
+        "icon": "",
         "title": "Arquitetura antes de código",
-        "description": "Antes de escrever código, analiso trade-offs de design — componentização, separação de responsabilidades e como a solução vai evoluir com o tempo."
+        "description": "Antes de sair codando, penso em como o sistema pode crescer sem virar bagunça. Gosto de separar bem as responsabilidades e prever onde pode dar problema no futuro."
       },
       {
-        "icon": "⚡",
+        "icon": "",
         "title": "Performance como requisito",
-        "description": "Performance não é otimização posterior. Code splitting, lazy loading, memoização e monitoramento de Web Vitals fazem parte do desenvolvimento desde o início."
+        "description": "Performance não é detalhe. Desde o começo já penso em dividir o código, carregar só o necessário e monitorar para não deixar o site lento."
       },
       {
-        "icon": "🧩",
+        "icon": "",
         "title": "Design System & Componentização",
-        "description": "Componentes são contratos. Construo interfaces a partir de primitivos reutilizáveis, com API clara e comportamento previsível, alinhados ao design system do produto."
+        "description": "Prefiro criar componentes reaproveitáveis, com comportamento previsível, para não reinventar a roda a cada tela nova."
       },
       {
-        "icon": "🔒",
+        "icon": "",
         "title": "Tipagem forte e contratos explícitos",
-        "description": "TypeScript é uma ferramenta de design. Tipos bem definidos reduzem bugs, documentam intenções e tornam refatorações seguras em bases de código grandes."
+        "description": "Uso TypeScript para deixar claro o que cada parte do sistema espera e entrega. Isso evita erro bobo e facilita manutenção."
       },
       {
-        "icon": "🧪",
+        "icon": "",
         "title": "Testabilidade como critério de design",
-        "description": "Código testável é código bem estruturado. Escrevo testes que validam comportamento, não implementação, e uso cobertura como indicador — não objetivo."
+        "description": "Gosto de escrever testes que realmente validam o que importa. Código fácil de testar normalmente é código bem feito."
       },
       {
-        "icon": "🔗",
-        "title": "Integração e contratos de API",
-        "description": "APIs são fronteiras. Projeto integrações com contratos explícitos, tratamento de erros consistente e separação clara entre camada de transporte e lógica de negócio."
+        "icon": "",
+        "title": "Documentação é parte do produto",
+        "description": "Documentar decisões e padrões ajuda o time todo e facilita a vida de quem chega depois."
       }
     ]
   }

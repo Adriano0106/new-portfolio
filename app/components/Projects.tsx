@@ -51,7 +51,9 @@ const Projects = ({ sidebarOpen }: ProjectProps) => {
           <Card key={index} className="w-full flex flex-col">
             <CardHeader className="pb-2">
               <CardTitle className="text-lg flex items-center gap-2 flex-wrap">
-                <span>{project.emoji} {project.name}</span>
+                <span>
+                  {project.emoji} {project.name}
+                </span>
                 {project.link === "youAreHere" && (
                   <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
                     {youAreHere}
@@ -65,25 +67,33 @@ const Projects = ({ sidebarOpen }: ProjectProps) => {
                 <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wide mb-1">
                   {labels.problem}
                 </p>
-                <p className="text-sm text-zinc-600 dark:text-zinc-300">{project.problem}</p>
+                <p className="text-sm text-zinc-600 dark:text-zinc-300">
+                  {project.problem}
+                </p>
               </div>
               <div>
                 <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wide mb-1">
                   {labels.solution}
                 </p>
-                <p className="text-sm text-zinc-600 dark:text-zinc-300">{project.solution}</p>
+                <p className="text-sm text-zinc-600 dark:text-zinc-300">
+                  {project.solution}
+                </p>
               </div>
               <div>
                 <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wide mb-1">
                   {labels.techDecisions}
                 </p>
-                <p className="text-sm text-zinc-600 dark:text-zinc-300">{project.techDecisions}</p>
+                <p className="text-sm text-zinc-600 dark:text-zinc-300">
+                  {project.techDecisions}
+                </p>
               </div>
               <div>
                 <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wide mb-1">
                   {labels.outcome}
                 </p>
-                <p className="text-sm text-zinc-600 dark:text-zinc-300">{project.outcome}</p>
+                <p className="text-sm text-zinc-600 dark:text-zinc-300">
+                  {project.outcome}
+                </p>
               </div>
 
               {project.techs?.length > 0 && (
