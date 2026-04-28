@@ -5,6 +5,7 @@
     "projects": "Projects",
     "mindset": "Mindset",
     "hobbies": "Hobbies",
+    "education": "Education",
     "contact": "Contact"
   },
   "presentation": {
@@ -26,7 +27,7 @@
         "role": "Full Stack Developer",
         "imageUrl": "/logo-uol.png",
         "time": "2020 - currently",
-        "description": "Architecture & High-Impact Frontend\nProgressed from feature delivery to owning system-wide architecture decisions and driving technical alignment across multiple business units. Architected and led the evolution of React/TypeScript applications on platforms handling millions of monthly visits — prioritizing scalability, maintainability, and performance. Defined componentization standards, global state contracts, and module structures for multidisciplinary teams.\n\nAdTech & Programmatic Advertising\nIntegrated Google Ad Manager, Prebid, and proprietary Ad Server infrastructure, implementing bidding logic and ad inventory management across high-traffic portals. Ensured high availability and consistent performance under variable load.\n\nDesign System & Component Architecture\nArchitected reusable component libraries aligned to design systems, collaborating directly with UX/UI teams (Figma, Adobe XD, Zeplin). Reduced visual inconsistencies and accelerated delivery cycles for new interfaces.\n\nCross-team Collaboration\nWorked closely with Data (Analytics), Backend teams from other business areas, and Infrastructure to deliver robust, integrated solutions and ensure alignment with company-wide technical strategies.\n\nPerformance & Quality\nOptimized critical applications with focus on code splitting, lazy loading, and Web Vitals. Implemented automated testing with Vitest, improving reliability and code coverage across large-scale codebases.\n\nAutomation & Internal Systems\nLed development of UOL's new FAQ system, replacing a third-party solution and significantly cutting operational costs. Designed automation tooling for bulk ad campaign publishing, adopted by Operations teams.",
+        "description": "Architecture & High-Impact Frontend\nProgressed from feature delivery to owning system-wide architecture decisions and driving technical alignment across multiple business units. Architected and led the evolution of React/TypeScript applications on platforms handling millions of monthly visits — prioritizing scalability, maintainability, and performance. Defined componentization standards, global state contracts, and module structures for multidisciplinary teams.\n\nAdTech & Programmatic Advertising\nIntegrated Google Ad Manager, Prebid, and proprietary Ad Server infrastructure, implementing bidding logic and ad inventory management across high-traffic portals. Ensured high availability and consistent performance under variable load.\n\nDesign System & Component Architecture\nArchitected reusable component libraries aligned to design systems, collaborating directly with UX/UI teams (Figma, Adobe XD, Zeplin). Reduced visual inconsistencies and accelerated delivery cycles for new interfaces.\n\nCross-team Collaboration\nWorked closely with Data (Analytics), Backend teams from other business areas, and Infrastructure to deliver robust, integrated solutions and ensure alignment with company-wide technical strategies. Used Jira and Kanban board to manage team workflow, track priorities, and keep delivery pace visible.\n\nPerformance & Quality\nOptimized critical applications with focus on code splitting, lazy loading, and Web Vitals. Implemented automated testing with Vitest, improving reliability and code coverage across large-scale codebases.\n\nAutomation & Internal Systems\nLed development of UOL's new FAQ system, replacing a third-party solution and significantly cutting operational costs. Designed automation tooling for bulk ad campaign publishing, adopted by Operations teams.",
         "techs": [
           "TypeScript",
           "JavaScript",
@@ -52,7 +53,8 @@
           "MySQL",
           "SQLite",
           "PostgreSQL",
-          "Oracle"
+          "Oracle",
+          "Jira"
         ]
       },
       {
@@ -93,13 +95,7 @@
         "solution": "Architected with Next.js App Router, with full component isolation, native i18n without external dependencies, and dark mode via next-themes.",
         "techDecisions": "Context API for minimal, predictable global state; shadcn/ui + Tailwind for a consistent design system without overhead; SSR/SSG for performance and SEO from the first request.",
         "outcome": "Bilingual portfolio (PT/EN) with dark mode and responsive sidebar navigation. Shipped to production with full TypeScript coverage, zero external i18n dependencies, and architectural decisions documented across every project card.",
-        "techs": [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "Tailwind CSS",
-          "shadcn/ui"
-        ]
+        "techs": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"]
       },
       {
         "emoji": "🏎️",
@@ -109,19 +105,15 @@
         "solution": "Designed and implemented a REST API in Node.js with a layered architecture, typed and documented endpoints — serving as the data contract for the frontend.",
         "techDecisions": "Express for lightweight control over the request pipeline; TypeScript to enforce explicit contracts between layers; strict separation across routes -> controllers -> data, enabling independent evolution and maintenance.",
         "outcome": "Production API consumed by Formula One Next, with low layer coupling, extensible structure for new season data, and full TypeScript contracts ensuring safe changes across all endpoints.",
-        "techs": [
-          "Node.js",
-          "Express",
-          "TypeScript"
-        ]
+        "techs": ["Node.js", "Express", "TypeScript"]
       },
       {
         "emoji": "🏎️",
         "name": "Formula One Next",
         "link": "https://adriano-formulaonenext.netlify.app/",
-        "problem": "Build a rich, performant, and navigable interface for displaying Formula 1 data sourced from a custom API.",
+        "problem": "Build a Formula 1 front-end with fast load times and smooth navigation, displaying data from a custom API.",
         "solution": "Next.js application with selective SSR and SSG per route, integrating the Formula One Database API with a focus on performance and SEO.",
-        "techDecisions": "Next.js for per-route hybrid rendering; Styled Components for style isolation without global conflicts; Bootstrap as a responsive grid without adding unnecessary complexity.",
+        "techDecisions": "Next.js to choose SSR or SSG per route based on what each page needs; Styled Components for style isolation without global conflicts; Bootstrap as a responsive grid without adding unnecessary complexity.",
         "outcome": "Published application with optimized load times, responsive layout, and a clear separation between data and presentation via server-side rendering.",
         "techs": [
           "Next.js",
@@ -132,6 +124,9 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "developedBy": "Developed by:"
   },
   "contact": {
     "title": "Contact",
@@ -147,32 +142,73 @@
       {
         "icon": "",
         "title": "Architecture before code",
-        "description": "Before writing any line, I evaluate design trade-offs: separation of concerns, contracts between layers, and how the solution holds up as the system grows. In practice: the FAQ system replacement started with an architecture spike that defined clear integration boundaries before any code was written, reducing rework throughout the entire delivery."
+        "description": "Before jumping into code, I think through the trade-offs: separation of concerns, contracts between layers, and how the solution holds up as the system grows. In practice: UOL's FAQ replacement started with an architecture spike that defined integration boundaries upfront — that cut rework across the whole delivery."
       },
       {
         "icon": "",
-        "title": "Performance as a requirement, not an afterthought",
-        "description": "Performance is part of the design from day one. Code splitting, lazy loading, selective memoization, and continuous Web Vitals monitoring are built into development — not patched in later. On UOL's high-traffic portals, this approach maintained consistent performance metrics even under variable ad load and dynamic content."
+        "title": "Performance from day one, not later",
+        "description": "Performance is part of the design from day one, not something fixed later. Code splitting, lazy loading, selective memoization, and Web Vitals monitoring are part of the normal development flow. On UOL's high-traffic portals, this kept metrics stable even under variable ad and content load."
       },
       {
         "icon": "",
         "title": "Design System & Componentization",
-        "description": "Components are contracts. I prioritize reusable primitives with a clear API, predictable behavior, and design system alignment — reducing rework and accelerating delivery."
+        "description": "Components are contracts. I like building reusable primitives with a clear API, predictable behavior, and design system alignment — less rework and faster delivery."
       },
       {
         "icon": "",
         "title": "Strong typing as a design tool",
-        "description": "TypeScript is not just about preventing bugs — it is living documentation of the system. Well-defined types communicate intent, reduce friction in code reviews, and make large-scale refactors safe."
+        "description": "TypeScript is more than bug prevention — it's living documentation. Well-defined types communicate intent, speed up code reviews, and make large-scale refactors much less risky."
       },
       {
         "icon": "",
-        "title": "Testability as a design criterion",
-        "description": "Hard-to-test code is a design smell. I write tests that validate behavior, not implementation — using coverage as a quality signal, not a target."
+        "title": "I think about tests from the start",
+        "description": "Hard-to-test code is usually a design problem. I write tests that validate what the code does, not how it does it — coverage is a signal, not a goal."
       },
       {
         "icon": "",
-        "title": "Documentation scales knowledge",
-        "description": "Well-written ADRs, READMEs, and API contracts multiply team knowledge. Good documentation reduces onboarding cost and increases delivery velocity."
+        "title": "Good documentation multiplies the team",
+        "description": "Good documentation multiplies what the team knows. Clear ADRs, READMEs, and API contracts reduce onboarding cost and keep delivery moving faster over time."
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "degreeLabel": "Bachelor's Degree",
+    "items": [
+      {
+        "type": "degree",
+        "featured": true,
+        "title": "Bachelor's in Computer Science",
+        "institution": "Universidade Nove de Julho (Uninove)",
+        "period": "2013 – 2016"
+      },
+      {
+        "type": "course",
+        "featured": false,
+        "title": "Frontend: React, Next.js, Tailwind",
+        "institution": "Rocketseat",
+        "period": ""
+      },
+      {
+        "type": "course",
+        "featured": false,
+        "title": "Backend: Node.js",
+        "institution": "Rocketseat",
+        "period": ""
+      },
+      {
+        "type": "course",
+        "featured": false,
+        "title": "Ruby on Rails",
+        "institution": "Udemy",
+        "period": ""
+      },
+      {
+        "type": "course",
+        "featured": false,
+        "title": "AWS",
+        "institution": "Rocketseat",
+        "period": "In progress"
       }
     ]
   }

@@ -7,6 +7,7 @@ import Presentation from "./components/Presentation"
 import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 import EngineeringMindset from "./components/EngineeringMindset"
+import Education from "./components/Education"
 import { AppSidebar } from "./components/AppSidebar"
 import Footer from "./components/Footer"
 import Contact from "./components/Contact"
@@ -15,6 +16,7 @@ import useWindowSize from "./hooks/useWindowSize"
 const sectionKeys = [
   "presentation",
   "experience",
+  "education",
   "projects",
   "mindset",
   "contact",
@@ -39,6 +41,7 @@ export default function Home() {
   const sections: Record<SectionKey, JSX.Element> = {
     presentation: <Presentation />,
     experience: <Experience sidebarOpen={sidebarOpen} />,
+    education: <Education sidebarOpen={sidebarOpen} />,
     projects: <Projects sidebarOpen={sidebarOpen} />,
     mindset: <EngineeringMindset sidebarOpen={sidebarOpen} />,
     contact: <Contact sidebarOpen={sidebarOpen} />,

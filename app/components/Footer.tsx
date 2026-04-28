@@ -1,7 +1,11 @@
+"use client"
+
 import Link from "next/link"
 import { FaGithub } from "react-icons/fa"
+import { useI18n } from "../context/I18nContext"
 
 const Footer = () => {
+  const { t } = useI18n()
   return (
     <footer
       id="footer-section"
@@ -11,7 +15,7 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-[50px] flex items-center justify-center">
         <div className="flex items-center gap-1 text-sm">
           <span className="text-zinc-500 dark:text-zinc-400">
-            Desenvolvido por:
+            {t("footer.developedBy")}
           </span>
           <Link
             href="https://github.com/Adriano0106"

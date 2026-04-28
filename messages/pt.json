@@ -5,13 +5,14 @@
     "projects": "Projetos",
     "mindset": "Mindset",
     "hobbies": "Hobbies",
+    "education": "Formação",
     "contact": "Contato"
   },
   "presentation": {
     "title": "Adriano Andrade da Silva",
     "job": "Engenheiro de Software Sênior Full Stack",
     "openToWork": "Aberto a oportunidades Sênior Full Stack / Front-End",
-    "summary": "7 anos de experiência em desenvolvimento de software, sendo 3 anos com ownership de decisões arquiteturais em sistemas frontend React/TypeScript com milhões de acessos mensais — responsável por definir padrões técnicos, cadência de entrega e alinhamento cross-team.\n\nEspecialista em arquitetura de componentes, AdTech, design systems e engenharia de performance.\n\nHistórico comprovado de impacto real: substituição de solução terceirizada por sistema próprio com redução de custos operacionais, e automação de processos adotada pelo time de operações.",
+    "summary": "7 anos de experiência em desenvolvimento de software, sendo 3 anos liderando decisões arquiteturais em sistemas frontend React/TypeScript com milhões de acessos mensais — responsável por definir padrões técnicos, cadência de entrega e alinhamento cross-team.\n\nEspecialista em arquitetura de componentes, AdTech, design systems e engenharia de performance.\n\nHistórico comprovado de impacto real: substituição de solução terceirizada por sistema próprio com redução de custos operacionais, e automação de processos adotada pelo time de operações.",
     "about": "Corinthiano, fã de música e cultura POP.",
     "age": "anos",
     "degree": "Bacharel em Ciência da Computação"
@@ -26,7 +27,7 @@
         "role": "Desenvolvedor Full Stack",
         "imageUrl": "/logo-uol.png",
         "time": "2020 - atualmente",
-        "description": "Arquitetura & Frontend de Alto Impacto\nEvolução de entrega de features para ownership de decisões arquiteturais e alinhamento técnico entre diferentes unidades de negócio. Arquitetou e liderou a evolução de aplicações React/TypeScript em plataformas com milhões de acessos mensais, priorizando escalabilidade, manutenibilidade e performance. Definiu padrões de componentização, contratos de estado global e estrutura de módulos para times multidisciplinares.\n\nAdTech & Publicidade Programática\nIntegrou Google Ad Manager, Prebid e Ad Server proprietário, implementando lógica de bidding e gestão de inventário publicitário em portais de alto tráfego. Garantiu alta disponibilidade e performance consistente sob carga variável.\n\nDesign System & Componentização\nArquitetou bibliotecas de componentes reutilizáveis alinhadas a design systems, em colaboração direta com UX/UI (Figma, Adobe XD, Zeplin). Reduziu inconsistências visuais e acelerou ciclos de entrega de novas interfaces.\n\nColaboração entre times\nAtuação próxima com times de Dados (Analytics), times de Back End de outras áreas da empresa e com o time de Infraestrutura, garantindo integração robusta, alinhamento técnico e entrega de soluções completas.\n\nPerformance & Qualidade\nOtimizou aplicações críticas com foco em code splitting, lazy loading e Web Vitals. Implementou testes automatizados com Vitest, elevando a confiabilidade e cobertura de código em bases de grande escala.\n\nAutomação & Sistemas Internos\nLiderou o desenvolvimento do novo sistema de FAQ do UOL, substituindo solução terceirizada e reduzindo significativamente custos operacionais. Projetou ferramentas de automação para publicação em lote de campanhas, adotadas pelo time de operações.",
+        "description": "Arquitetura & Frontend de Alto Impacto\nEvolução de entrega de features para liderança nas decisões arquiteturais e alinhamento técnico entre diferentes unidades de negócio. Arquitetou e liderou a evolução de aplicações React/TypeScript em plataformas com milhões de acessos mensais, priorizando escalabilidade, manutenibilidade e performance. Definiu padrões de componentização, contratos de estado global e estrutura de módulos para times multidisciplinares.\n\nAdTech & Publicidade Programática\nIntegrou Google Ad Manager, Prebid e Ad Server proprietário, implementando lógica de bidding e gestão de inventário publicitário em portais de alto tráfego. Garantiu alta disponibilidade e performance consistente sob carga variável.\n\nDesign System & Componentização\nArquitetou bibliotecas de componentes reutilizáveis alinhadas a design systems, em colaboração direta com UX/UI (Figma, Adobe XD, Zeplin). Reduziu inconsistências visuais e acelerou ciclos de entrega de novas interfaces.\n\nColaboração entre times\nAtuação próxima com times de Dados (Analytics), times de Back End de outras áreas da empresa e com o time de Infraestrutura, garantindo integração robusta, alinhamento técnico e entrega de soluções completas. Gestão do fluxo de trabalho via Jira com quadro Kanban para acompanhamento de prioridades e entregas.\n\nPerformance & Qualidade\nOtimizou aplicações críticas com foco em code splitting, lazy loading e Web Vitals. Implementou testes automatizados com Vitest, elevando a confiabilidade e cobertura de código em bases de grande escala.\n\nAutomação & Sistemas Internos\nLiderou o desenvolvimento do novo sistema de FAQ do UOL, substituindo solução terceirizada e reduzindo significativamente custos operacionais. Projetou ferramentas de automação para publicação em lote de campanhas, adotadas pelo time de operações.",
         "techs": [
           "TypeScript",
           "JavaScript",
@@ -52,7 +53,8 @@
           "MySQL",
           "SQLite",
           "PostgreSQL",
-          "Oracle"
+          "Oracle",
+          "Jira"
         ]
       },
       {
@@ -93,13 +95,7 @@
         "solution": "Arquitetado com Next.js App Router, com isolamento total de componentes, i18n nativo sem dependências externas e dark mode via next-themes.",
         "techDecisions": "Context API para estado global mínimo e previsível; shadcn/ui + Tailwind para um design system consistente sem overhead; SSR/SSG para performance e SEO desde o primeiro acesso.",
         "outcome": "Portfólio bilíngue (PT/EN) com dark mode e navegação por sidebar responsiva. Publicado em produção com cobertura total em TypeScript, zero dependências externas de i18n e decisões arquiteturais documentadas em cada projeto.",
-        "techs": [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "Tailwind CSS",
-          "shadcn/ui"
-        ]
+        "techs": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"]
       },
       {
         "emoji": "🏎️",
@@ -109,19 +105,15 @@
         "solution": "Projetada e implementada uma REST API em Node.js com arquitetura em camadas, endpoints tipados e documentados — servindo como contrato de dados para o frontend.",
         "techDecisions": "Express pela leveza e controle total sobre o pipeline de requisições; TypeScript para contratos explícitos entre camadas; separação estrita em routes -> controllers -> data, facilitando evolução e manutenção independente.",
         "outcome": "API em produção consumida pela aplicação Formula One Next, com baixo acoplamento entre camadas, estrutura extensível para novos dados de temporada e contratos TypeScript garantindo mudanças seguras em todos os endpoints.",
-        "techs": [
-          "Node.js",
-          "Express",
-          "TypeScript"
-        ]
+        "techs": ["Node.js", "Express", "TypeScript"]
       },
       {
         "emoji": "🏎️",
         "name": "Formula One Next",
         "link": "https://adriano-formulaonenext.netlify.app/",
-        "problem": "Construir uma interface rica, performática e com boa experiência de navegação para visualização de dados de Fórmula 1 consumindo uma API própria.",
+        "problem": "Criar uma aplicação de Fórmula 1 com carregamento rápido e navegação fluida para visualizar dados de temporadas, consumindo uma API própria.",
         "solution": "Aplicação com Next.js explorando SSR e SSG de forma seletiva por rota, integrando a Formula One Database API com foco em performance e SEO.",
-        "techDecisions": "Next.js para renderização híbrida por rota; Styled Components para isolamento de estilos sem conflitos globais; Bootstrap como grid responsivo sem adicionar complexidade desnecessária.",
+        "techDecisions": "Next.js para escolher entre SSR e SSG por rota conforme a necessidade dos dados; Styled Components para isolamento de estilos sem conflitos globais; Bootstrap como grid responsivo sem adicionar complexidade desnecessária.",
         "outcome": "Aplicação publicada com carregamento otimizado, layout responsivo e separação clara entre dados e apresentação via server-side rendering.",
         "techs": [
           "Next.js",
@@ -132,6 +124,9 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "developedBy": "Desenvolvido por:"
   },
   "contact": {
     "title": "Contato",
@@ -147,32 +142,73 @@
       {
         "icon": "",
         "title": "Arquitetura antes de código",
-        "description": "Antes de escrever qualquer linha, avalio trade-offs de design: separação de responsabilidades, contratos entre camadas e como a solução se comporta conforme o sistema cresce. Na prática: a substituição do sistema de FAQ partiu de um spike de arquitetura que definiu os limites de integração antes de qualquer linha de código, reduzindo retrabalho ao longo de toda a entrega."
+        "description": "Antes de sair codando, paro para pensar nos trade-offs: separação de responsabilidades, contratos entre camadas e como a solução aguenta o crescimento do sistema. Na prática: a substituição do FAQ do UOL começou com um spike de arquitetura que definiu os limites de integração antes de qualquer código — isso cortou o retrabalho ao longo de toda a entrega."
       },
       {
         "icon": "",
-        "title": "Performance como requisito, não otimização posterior",
-        "description": "Performance entra no design desde o início. Code splitting, lazy loading, memoização seletiva e monitoramento contínuo de Web Vitals fazem parte do desenvolvimento — não do pós-problema. Nos portais de alto tráfego do UOL, essa abordagem manteve métricas de performance consistentes mesmo sob carga variável de conteúdo e publicidade."
+        "title": "Performance desde o início, não depois",
+        "description": "Performance entra no projeto desde o início, não é algo que se resolve depois. Code splitting, lazy loading, memoização seletiva e monitoramento de Web Vitals são parte do trabalho diário. Nos portais do UOL, isso manteve as métricas estáveis mesmo com variação de carga de anúncios e conteúdo."
       },
       {
         "icon": "",
         "title": "Design System & Componentização",
-        "description": "Componentes são contratos. Priorizo primitivos reutilizáveis com API clara, comportamento previsível e alinhamento ao design system — reduzindo retrabalho e acelerando entregas."
+        "description": "Componentes são contratos. Gosto de construir primitivos reutilizáveis com API clara e comportamento previsível, alinhados ao design system — menos retrabalho e entregas mais rápidas."
       },
       {
         "icon": "",
         "title": "Tipagem forte como ferramenta de design",
-        "description": "TypeScript não é só prevenção de bugs — é documentação viva do sistema. Tipos bem definidos comunicam intenção, reduzem atrito em revisões de código e tornam refatorações seguras em grandes codebases."
+        "description": "TypeScript vai além de evitar bugs — é documentação viva do sistema. Tipos bem definidos comunicam intenção, deixam as code reviews mais rápidas e tornam refatorações grandes muito menos arriscadas."
       },
       {
         "icon": "",
-        "title": "Testabilidade como critério de design",
-        "description": "Código difícil de testar é sinal de design ruim. Escrevo testes que validam comportamento, não implementação — usando cobertura como indicador de qualidade, não como objetivo em si."
+        "title": "Penso nos testes desde o início",
+        "description": "Se o código é difícil de testar, o problema costuma ser no design. Escrevo testes que validam o que o código faz, não como ele faz — cobertura é um indicador, não uma meta."
       },
       {
         "icon": "",
-        "title": "Documentação escala conhecimento",
-        "description": "ADRs, READMEs e contratos de API bem escritos multiplicam o conhecimento do time. Boa documentação reduz o custo de onboarding e aumenta a velocidade de entrega."
+        "title": "Boa documentação multiplica o time",
+        "description": "Uma documentação bem feita multiplica o que o time sabe. ADRs, READMEs e contratos de API claros reduzem o custo de onboarding e deixam as entregas mais rápidas no longo prazo."
+      }
+    ]
+  },
+  "education": {
+    "title": "Formação",
+    "degreeLabel": "Graduação",
+    "items": [
+      {
+        "type": "degree",
+        "featured": true,
+        "title": "Bacharelado em Ciência da Computação",
+        "institution": "Universidade Nove de Julho (Uninove)",
+        "period": "2013 – 2016"
+      },
+      {
+        "type": "course",
+        "featured": false,
+        "title": "Frontend: React, Next.js, Tailwind",
+        "institution": "Rocketseat",
+        "period": ""
+      },
+      {
+        "type": "course",
+        "featured": false,
+        "title": "Backend: Node.js",
+        "institution": "Rocketseat",
+        "period": ""
+      },
+      {
+        "type": "course",
+        "featured": false,
+        "title": "Ruby on Rails",
+        "institution": "Udemy",
+        "period": ""
+      },
+      {
+        "type": "course",
+        "featured": false,
+        "title": "AWS",
+        "institution": "Rocketseat",
+        "period": "Em andamento"
       }
     ]
   }

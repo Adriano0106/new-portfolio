@@ -1,0 +1,8 @@
+{
+  "chat.tools.terminal.autoApprove": {
+    "/^cd \"z:\\\\Arquivos\\\\Projetos\\\\React\\\\new-portfolio\" && python -c \"import sys; sys\\.exit\\(0\\)\" 2>&1 && python -c \"\nimport zlib, re\nwith open\\('Adriano_01_2026\\.pdf','rb'\\) as f:\n    data = f\\.read\\(\\)\n# Find all compressed streams\nstreams = re\\.findall\\(b'stream\\\\r\\?\\\\n\\(\\.\\+\\?\\)\\\\r\\?\\\\nendstream', data, re\\.DOTALL\\)\ntexts = \\[\\]\nfor s in streams:\n    try:\n        dec = zlib\\.decompress\\(s\\)\n        txt = dec\\.decode\\('latin-1', errors='ignore'\\)\n        # Extract readable text-like content \\(BT\\.\\.\\.ET blocks\\)\n        bt_blocks = re\\.findall\\(r'BT\\(\\.\\+\\?\\)ET', txt, re\\.DOTALL\\)\n        for block in bt_blocks:\n            # Extract text from Tj and TJ operators\n            parts = re\\.findall\\(r'\\\\\\(\\(\\[\\^\\)\\]\\+\\)\\\\\\)', block\\)\n            line = ' '\\.join\\(p for p in parts if p\\.strip\\(\\)\\)\n            if line\\.strip\\(\\):\n                texts\\.append\\(line\\.strip\\(\\)\\)\n    except:\n        pass\nfor t in texts:\n    print\\(t\\)\n\" 2>&1$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
+}

@@ -9,6 +9,7 @@ import { useI18n } from "../context/I18nContext"
 type SectionKey =
   | "presentation"
   | "experience"
+  | "education"
   | "projects"
   | "mindset"
   | "contact"
@@ -32,6 +33,7 @@ export function AppSidebar({
   const navigation = [
     { name: t("navigation.presentation"), key: "presentation" },
     { name: t("navigation.experience"), key: "experience" },
+    { name: t("navigation.education"), key: "education" },
     { name: t("navigation.projects"), key: "projects" },
     { name: t("navigation.mindset"), key: "mindset" },
     { name: t("navigation.contact"), key: "contact" },
