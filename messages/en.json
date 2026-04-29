@@ -10,8 +10,8 @@
   },
   "presentation": {
     "title": "Adriano Andrade da Silva",
-    "job": "Senior Full Stack Software Engineer",
-    "openToWork": "Open to Senior Full Stack / Front-End roles",
+    "job": "Full Stack Software Engineer",
+    "openToWork": "Open to Full Stack / Front-End roles",
     "summary": "7 years of software development experience, with 3 years owning architectural decisions on React/TypeScript frontend systems serving millions of monthly users — responsible for defining technical standards, delivery pace, and cross-team alignment.\n\nSpecialist in component architecture, AdTech integrations, design systems, and performance engineering.\n\nProven track record of real-world impact: replaced a third-party FAQ system with an in-house solution cutting operational costs, and delivered automation tooling adopted across the Operations team.",
     "about": "Corinthians fan, music and POP culture enthusiast.",
     "age": "years old",
@@ -131,7 +131,6 @@
   "contact": {
     "title": "Contact",
     "cta": "Contact information",
-    "ctaDescription": "Available for Senior Full Stack / Front-End opportunities (remote or hybrid, GMT-3). Will respond within 24h.",
     "emailDescription": "Email:",
     "socialDescription": "Social:"
   },

@@ -10,8 +10,8 @@
   },
   "presentation": {
     "title": "Adriano Andrade da Silva",
-    "job": "Engenheiro de Software Sênior Full Stack",
-    "openToWork": "Aberto a oportunidades Sênior Full Stack / Front-End",
+    "job": "Engenheiro de Software Full Stack",
+    "openToWork": "Aberto a oportunidades Full Stack / Front-End",
     "summary": "7 anos de experiência em desenvolvimento de software, sendo 3 anos liderando decisões arquiteturais em sistemas frontend React/TypeScript com milhões de acessos mensais — responsável por definir padrões técnicos, cadência de entrega e alinhamento cross-team.\n\nEspecialista em arquitetura de componentes, AdTech, design systems e engenharia de performance.\n\nHistórico comprovado de impacto real: substituição de solução terceirizada por sistema próprio com redução de custos operacionais, e automação de processos adotada pelo time de operações.",
     "about": "Corinthiano, fã de música e cultura POP.",
     "age": "anos",
@@ -27,7 +27,7 @@
         "role": "Desenvolvedor Full Stack",
         "imageUrl": "/logo-uol.png",
         "time": "2020 - atualmente",
-        "description": "Arquitetura & Frontend de Alto Impacto\nEvolução de entrega de features para liderança nas decisões arquiteturais e alinhamento técnico entre diferentes unidades de negócio. Arquitetou e liderou a evolução de aplicações React/TypeScript em plataformas com milhões de acessos mensais, priorizando escalabilidade, manutenibilidade e performance. Definiu padrões de componentização, contratos de estado global e estrutura de módulos para times multidisciplinares.\n\nAdTech & Publicidade Programática\nIntegrou Google Ad Manager, Prebid e Ad Server proprietário, implementando lógica de bidding e gestão de inventário publicitário em portais de alto tráfego. Garantiu alta disponibilidade e performance consistente sob carga variável.\n\nDesign System & Componentização\nArquitetou bibliotecas de componentes reutilizáveis alinhadas a design systems, em colaboração direta com UX/UI (Figma, Adobe XD, Zeplin). Reduziu inconsistências visuais e acelerou ciclos de entrega de novas interfaces.\n\nColaboração entre times\nAtuação próxima com times de Dados (Analytics), times de Back End de outras áreas da empresa e com o time de Infraestrutura, garantindo integração robusta, alinhamento técnico e entrega de soluções completas. Gestão do fluxo de trabalho via Jira com quadro Kanban para acompanhamento de prioridades e entregas.\n\nPerformance & Qualidade\nOtimizou aplicações críticas com foco em code splitting, lazy loading e Web Vitals. Implementou testes automatizados com Vitest, elevando a confiabilidade e cobertura de código em bases de grande escala.\n\nAutomação & Sistemas Internos\nLiderou o desenvolvimento do novo sistema de FAQ do UOL, substituindo solução terceirizada e reduzindo significativamente custos operacionais. Projetou ferramentas de automação para publicação em lote de campanhas, adotadas pelo time de operações.",
+        "description": "Arquitetura & Frontend de Alto Impacto\nEvolução de entrega de features para liderança nas decisões arquiteturais e alinhamento técnico entre diferentes unidades de negócio. Arquitetou e liderou a evolução de aplicações React/TypeScript em plataformas com milhões de acessos mensais, priorizando escalabilidade, manutenibilidade e performance. Definiu padrões de componentização, contratos de estado global e estrutura de módulos para times multidisciplinares.\n\nAdTech & Publicidade Programática\nIntegrou Google Ad Manager, Prebid e Ad Server proprietário, implementando lógica de bidding e gestão de inventário publicitário em portais de alto tráfego. Garantiu alta disponibilidade e performance consistente sob carga variável.\n\nDesign System & Componentização\nArquitetou bibliotecas de componentes reutilizáveis alinhadas a design systems, em colaboração direta com UX/UI (Figma, Adobe XD, Zeplin). Reduziu inconsistências visuais e acelerou ciclos de entrega de novas interfaces.\n\nColaboração entre times\nAtuação próxima com times de Dados (Analytics), times de Back End de outras áreas da empresa e com o time de Infraestrutura, garantindo integração robusta, alinhamento técnico e entrega de soluções completas. Gestão do fluxo de trabalho via Jira com quadro Kanban para acompanhamento de prioridades e entregas.\n\nPerformance & Qualidade\nOtimizou aplicações críticas com foco em code splitting, lazy loading e Web Vitals. Implementou testes automatizados com Vitest, elevando a confiabilidade e cobertura de código em bases de maior escala.\n\nAutomação & Sistemas Internos\nLiderou o desenvolvimento do novo sistema de FAQ do UOL, substituindo solução terceirizada e reduzindo significativamente custos operacionais. Projetou ferramentas de automação para publicação em lote de campanhas, adotadas pelo time de operações.",
         "techs": [
           "TypeScript",
           "JavaScript",
@@ -131,7 +131,6 @@
   "contact": {
     "title": "Contato",
     "cta": "Informações de contato",
-    "ctaDescription": "Disponível para oportunidades Sênior Full Stack / Front-End (remoto ou híbrido, GMT-3). Respondo em até 24h.",
     "emailDescription": "Email:",
     "socialDescription": "Redes sociais:"
   },
