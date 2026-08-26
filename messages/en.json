@@ -98,6 +98,16 @@
         "techs": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"]
       },
       {
+        "emoji": "📋",
+        "name": "Taskboard",
+        "link": "https://taskboard-adri.vercel.app/",
+        "problem": "Centralize team workflows in a multi-company platform while keeping each organization's data isolated and ensuring people can access and change only the resources allowed by their role.",
+        "solution": "Full-stack platform organized into companies, departments, and configurable Kanban boards, with drag-and-drop and detailed tasks covering assignees, priorities, comments, attachments, watchers, and activity history.",
+        "techDecisions": "TypeScript monorepo with React, Vite, and SCSS on the frontend; Fastify and Zod for a validated API; Prisma and PostgreSQL for persistence; JWT and tenant-scoped authorization for security. Docker standardizes the environment, while Vitest covers sensitive API flows.",
+        "outcome": "Complete application runnable with Docker, with architecture separated across components, hooks, routes, and repositories. The public demo reuses the real application's contracts and flows, simulates the API in the browser, and persists data locally through localStorage.",
+        "techs": ["React", "TypeScript", "Vite", "Fastify", "Prisma", "PostgreSQL", "Docker", "Vitest"]
+      },
+      {
         "emoji": "🏎️",
         "name": "Formula One Database",
         "link": "https://github.com/Adriano0106/Formula-One-Database",

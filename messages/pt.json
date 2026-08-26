@@ -98,6 +98,16 @@
         "techs": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"]
       },
       {
+        "emoji": "📋",
+        "name": "Taskboard",
+        "link": "https://taskboard-adri.vercel.app/",
+        "problem": "Centralizar o trabalho de equipes em uma plataforma multiempresa, mantendo dados isolados por organização e garantindo que cada pessoa acesse e altere apenas os recursos permitidos pelo seu papel.",
+        "solution": "Plataforma full stack organizada em empresas, departamentos e quadros Kanban configuráveis, com drag-and-drop e tarefas detalhadas por responsável, prioridade, comentários, anexos, observadores e histórico de atividades.",
+        "techDecisions": "Monorepo TypeScript com React, Vite e SCSS no frontend; Fastify e Zod para uma API validada; Prisma e PostgreSQL para persistência; JWT e autorização por tenant para segurança. Docker padroniza o ambiente e Vitest cobre os fluxos sensíveis da API.",
+        "outcome": "Aplicação completa executável com Docker, arquitetura separada entre components, hooks, routes e repositories. A demo pública reutiliza os mesmos contratos e fluxos da aplicação real, simula a API no navegador e persiste os dados localmente via localStorage.",
+        "techs": ["React", "TypeScript", "Vite", "Fastify", "Prisma", "PostgreSQL", "Docker", "Vitest"]
+      },
+      {
         "emoji": "🏎️",
         "name": "Formula One Database",
         "link": "https://github.com/Adriano0106/Formula-One-Database",
