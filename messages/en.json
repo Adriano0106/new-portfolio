@@ -3,19 +3,21 @@
     "presentation": "Presentation",
     "experience": "Experience",
     "projects": "Projects",
-    "mindset": "Mindset",
+    "mindset": "Engineering practices",
     "hobbies": "Hobbies",
     "education": "Education",
     "contact": "Contact"
   },
   "presentation": {
     "title": "Adriano Andrade da Silva",
-    "job": "Full Stack Software Engineer",
-    "openToWork": "Open to Full Stack / Front-End roles",
-    "summary": "7 years of software development experience, with 3 years owning architectural decisions on React/TypeScript frontend systems serving millions of monthly users — responsible for defining technical standards, delivery pace, and cross-team alignment.\n\nSpecialist in component architecture, AdTech integrations, design systems, and performance engineering.\n\nProven track record of real-world impact: replaced a third-party FAQ system with an in-house solution cutting operational costs, and delivered automation tooling adopted across the Operations team.",
+    "job": "Front-End / Full Stack Software Engineer",
+    "highlight": "React, Node, TypeScript",
+    "openToWork": "Open to Front-End and Full Stack roles with React and TypeScript",
+    "summary": "Software engineer with a strong focus on React, TypeScript, and frontend architecture. At UOL, I contributed to technical decisions and the evolution of applications on platforms with millions of monthly visits, working on component composition, state organization, and performance optimization. I collaborate with UX/UI to turn product needs into consistent, maintainable interfaces.\n\nMy experience also covers backend development with Node.js, APIs, and relational databases, connecting interfaces to business logic and data persistence. This full stack work includes replacing a third-party FAQ solution with an in-house system that reduced operating costs, and campaign automation tools adopted by the Operations team.",
     "about": "Corinthians fan, music and POP culture enthusiast.",
     "age": "years old",
-    "degree": "Bachelor's in Computer Science"
+    "degree": "Bachelor's in Computer Science",
+    "photoAlt": "Portrait of Adriano Andrade"
   },
   "experience": {
     "title": "Experience",
@@ -27,7 +29,7 @@
         "role": "Full Stack Developer",
         "imageUrl": "/logo-uol.png",
         "time": "2020 - currently",
-        "description": "Architecture & High-Impact Frontend\nProgressed from feature delivery to owning system-wide architecture decisions and driving technical alignment across multiple business units. Architected and led the evolution of React/TypeScript applications on platforms handling millions of monthly visits — prioritizing scalability, maintainability, and performance. Defined componentization standards, global state contracts, and module structures for multidisciplinary teams.\n\nAdTech & Programmatic Advertising\nIntegrated Google Ad Manager, Prebid, and proprietary Ad Server infrastructure, implementing bidding logic and ad inventory management across high-traffic portals. Ensured high availability and consistent performance under variable load.\n\nDesign System & Component Architecture\nArchitected reusable component libraries aligned to design systems, collaborating directly with UX/UI teams (Figma, Adobe XD, Zeplin). Reduced visual inconsistencies and accelerated delivery cycles for new interfaces.\n\nCross-team Collaboration\nWorked closely with Data (Analytics), Backend teams from other business areas, and Infrastructure to deliver robust, integrated solutions and ensure alignment with company-wide technical strategies. Used Jira and Kanban board to manage team workflow, track priorities, and keep delivery pace visible.\n\nPerformance & Quality\nOptimized critical applications with focus on code splitting, lazy loading, and Web Vitals. Implemented automated testing with Vitest, improving reliability and code coverage across large-scale codebases.\n\nAutomation & Internal Systems\nLed development of UOL's new FAQ system, replacing a third-party solution and significantly cutting operational costs. Designed automation tooling for bulk ad campaign publishing, adopted by Operations teams.",
+        "description": "Architecture & High-Impact Frontend\nProgressed from feature delivery to owning system-wide architecture decisions and driving technical alignment across multiple business units. Architected and led the evolution of React/TypeScript applications on platforms handling millions of monthly visits — prioritizing scalability, maintainability, and performance. Defined componentization standards, global state contracts, and module structures for multidisciplinary teams.\n\nAdTech & Programmatic Advertising\nIntegrated Google Ad Manager, Prebid, and proprietary Ad Server infrastructure, implementing bidding logic and ad inventory management across high-traffic portals. Ensured high availability and consistent performance under variable load.\n\nInterfaces & Component Libraries\nBuilt React/TypeScript interfaces with component libraries, following visual standards and collaborating with UX/UI (Figma, Adobe XD, Zeplin). Applied existing components to product needs, focusing on visual consistency.\n\nCross-team Collaboration\nWorked closely with Data (Analytics), Backend teams from other business areas, and Infrastructure to deliver robust, integrated solutions and ensure alignment with company-wide technical strategies. Used Jira and Kanban board to manage team workflow, track priorities, and keep delivery pace visible.\n\nPerformance & Quality\nOptimized critical applications with focus on code splitting, lazy loading, and Web Vitals. Implemented automated testing with Vitest, improving reliability and code coverage across large-scale codebases.\n\nAutomation & Internal Systems\nLed development of UOL's new FAQ system, replacing a third-party solution and significantly cutting operational costs. Designed automation tooling for bulk ad campaign publishing, adopted by Operations teams.",
         "techs": [
           "TypeScript",
           "JavaScript",
@@ -147,38 +149,33 @@
     "socialDescription": "Social:"
   },
   "mindset": {
-    "title": "Engineering Mindset",
-    "subtitle": "How I approach technical problems, architecture decisions, and systems engineering day-to-day.",
+    "title": "Engineering practices",
+    "subtitle": "Decisions and practices applied to interfaces and software projects.",
     "items": [
       {
         "icon": "",
-        "title": "Architecture before code",
-        "description": "Before jumping into code, I think through the trade-offs: separation of concerns, contracts between layers, and how the solution holds up as the system grows. In practice: UOL's FAQ replacement started with an architecture spike that defined integration boundaries upfront — that cut rework across the whole delivery."
+        "title": "Architecture and integration",
+        "description": "For UOL’s FAQ, initial planning defined how the in-house solution would connect to other systems before development started."
       },
       {
         "icon": "",
-        "title": "Performance from day one, not later",
-        "description": "Performance is part of the design from day one, not something fixed later. Code splitting, lazy loading, selective memoization, and Web Vitals monitoring are part of the normal development flow. On UOL's high-traffic portals, this kept metrics stable even under variable ad and content load."
+        "title": "Application planning with AI",
+        "description": "I use AI to help organize requirements, discuss technical options, and break development into steps. I review the suggestions and adapt the plan to the project's needs before implementation."
       },
       {
         "icon": "",
-        "title": "Design System & Componentization",
-        "description": "Components are contracts. I like building reusable primitives with a clear API, predictable behavior, and design system alignment — less rework and faster delivery."
+        "title": "Interface composition",
+        "description": "I use component libraries to build React/TypeScript interfaces, following visual standards and collaborating with UX/UI."
       },
       {
         "icon": "",
-        "title": "Strong typing as a design tool",
-        "description": "TypeScript is more than bug prevention — it's living documentation. Well-defined types communicate intent, speed up code reviews, and make large-scale refactors much less risky."
+        "title": "Contracts and organization",
+        "description": "In Taskboard, the frontend is organized into components and hooks. The demo reuses application contracts and simulates the API in the browser."
       },
       {
         "icon": "",
-        "title": "I think about tests from the start",
-        "description": "Hard-to-test code is usually a design problem. I write tests that validate what the code does, not how it does it — coverage is a signal, not a goal."
-      },
-      {
-        "icon": "",
-        "title": "Good documentation multiplies the team",
-        "description": "Good documentation multiplies what the team knows. Clear ADRs, READMEs, and API contracts reduce onboarding cost and keep delivery moving faster over time."
+        "title": "Performance and testing",
+        "description": "At UOL, I worked with code splitting, lazy loading, and Web Vitals. In Taskboard, Vitest covers sensitive API flows."
       }
     ]
   },

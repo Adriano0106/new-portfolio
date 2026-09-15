@@ -39,16 +39,19 @@ const Presentation = () => {
             src="/adriano_new_picture.png"
             width={160}
             height={160}
-            alt="Foto de Adriano Andrade"
+            alt={t("presentation.photoAlt")}
             className="rounded-full border-4 border-zinc-200 dark:border-zinc-700 shadow-xl shrink-0"
           />
           <div className="flex flex-col items-center md:items-start text-center md:text-left gap-3">
             <h1 className="text-4xl font-extrabold text-zinc-800 dark:text-zinc-100 leading-tight">
               {t("presentation.title")}
             </h1>
-            <p className="text-xl font-semibold text-blue-600 dark:text-blue-400">
+            <p className="text-xl font-semibold text-zinc-700 dark:text-zinc-200">
               {t("presentation.job")}
             </p>
+            <span className="inline-block rounded-full border border-blue-200 bg-blue-50 px-4 py-1 text-base font-semibold text-blue-700 dark:border-blue-800 dark:bg-blue-950 dark:text-blue-300">
+              {t("presentation.highlight")}
+            </span>
             <div className="flex flex-wrap gap-3 text-zinc-500 dark:text-zinc-400 text-sm mt-1">
               <span>
                 {age} {t("presentation.age")}

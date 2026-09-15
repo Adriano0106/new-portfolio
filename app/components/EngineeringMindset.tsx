@@ -33,7 +33,7 @@ const EngineeringMindset = ({ sidebarOpen }: Props) => {
             key={i}
             className="flex gap-4 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 transition-colors"
           >
-            <span className="text-2xl shrink-0">{item.icon}</span>
+            {item.icon && <span className="text-2xl shrink-0" aria-hidden="true">{item.icon}</span>}
             <div>
               <p className="font-semibold text-zinc-800 dark:text-zinc-100 mb-1">
                 {item.title}
