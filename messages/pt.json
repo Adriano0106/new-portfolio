@@ -86,48 +86,38 @@
     "youAreHere": "Você está aqui",
     "labels": {
       "problem": "Contexto",
-      "solution": "Solução",
+      "solution": "Contribuição",
       "techDecisions": "Decisões Técnicas",
       "outcome": "Resultado"
     },
     "items": [
       {
-        "emoji": "😎",
-        "name": "Portfólio",
-        "link": "youAreHere",
-        "problem": "Criar uma presença técnica que comunicasse senioridade e decisões reais de engenharia — e não apenas uma lista de tecnologias utilizadas.",
-        "solution": "Arquitetado com Next.js App Router, com isolamento total de componentes, i18n nativo sem dependências externas e dark mode via next-themes.",
-        "techDecisions": "Context API para estado global mínimo e previsível; shadcn/ui + Tailwind para um design system consistente sem overhead; SSR/SSG para performance e SEO desde o primeiro acesso.",
-        "outcome": "Portfólio bilíngue (PT/EN) com dark mode e navegação por sidebar responsiva. Publicado em produção com cobertura total em TypeScript, zero dependências externas de i18n e decisões arquiteturais documentadas em cada projeto.",
-        "techs": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"]
-      },
-      {
         "emoji": "📋",
         "name": "Taskboard",
         "link": "https://taskboard-adri.vercel.app/",
-        "problem": "Centralizar o trabalho de equipes em uma plataforma multiempresa, mantendo dados isolados por organização e garantindo que cada pessoa acesse e altere apenas os recursos permitidos pelo seu papel.",
-        "solution": "Plataforma full stack organizada em empresas, departamentos e quadros Kanban configuráveis, com drag-and-drop e tarefas detalhadas por responsável, prioridade, comentários, anexos, observadores e histórico de atividades.",
-        "techDecisions": "Monorepo TypeScript com React, Vite e SCSS no frontend; Fastify e Zod para uma API validada; Prisma e PostgreSQL para persistência; JWT e autorização por tenant para segurança. Docker padroniza o ambiente e Vitest cobre os fluxos sensíveis da API.",
-        "outcome": "Aplicação completa executável com Docker, arquitetura separada entre components, hooks, routes e repositories. A demo pública reutiliza os mesmos contratos e fluxos da aplicação real, simula a API no navegador e persiste os dados localmente via localStorage.",
-        "techs": ["React", "TypeScript", "Vite", "Fastify", "Prisma", "PostgreSQL", "Docker", "Vitest"]
-      },
-      {
-        "emoji": "🏎️",
-        "name": "Formula One Database",
-        "link": "https://github.com/Adriano0106/Formula-One-Database",
-        "problem": "Ausência de uma API estruturada, tipada e confiável com dados atualizados de Fórmula 1 para uso como backend de uma aplicação real.",
-        "solution": "Projetada e implementada uma REST API em Node.js com arquitetura em camadas, endpoints tipados e documentados — servindo como contrato de dados para o frontend.",
-        "techDecisions": "Express pela leveza e controle total sobre o pipeline de requisições; TypeScript para contratos explícitos entre camadas; separação estrita em routes -> controllers -> data, facilitando evolução e manutenção independente.",
-        "outcome": "API em produção consumida pela aplicação Formula One Next, com baixo acoplamento entre camadas, estrutura extensível para novos dados de temporada e contratos TypeScript garantindo mudanças seguras em todos os endpoints.",
-        "techs": ["Node.js", "Express", "TypeScript"]
+        "problem": "Centralizar o trabalho de equipes em empresas, departamentos e quadros Kanban configuráveis.",
+        "solution": "Interface React/TypeScript com navegação entre quadros e tarefas com responsável, prioridade, comentários e histórico.",
+        "techDecisions": "Frontend organizado em componentes e hooks, com Vite e SCSS; contratos compartilhados com a API.",
+        "outcome": "Aplicação full stack com Fastify, Zod, Prisma e PostgreSQL, autenticação JWT e autorização por organização. Docker padroniza o ambiente e Vitest cobre fluxos sensíveis da API.",
+        "techs": [
+          "React",
+          "TypeScript",
+          "Vite",
+          "Fastify",
+          "Prisma",
+          "PostgreSQL",
+          "Docker",
+          "Vitest"
+        ],
+        "demoNote": "Demo com API simulada no navegador e dados salvos localmente via localStorage."
       },
       {
         "emoji": "🏎️",
         "name": "Formula One Next",
         "link": "https://adriano-formulaonenext.netlify.app/",
-        "problem": "Criar uma aplicação de Fórmula 1 com carregamento rápido e navegação fluida para visualizar dados de temporadas, consumindo uma API própria.",
-        "solution": "Aplicação com Next.js explorando SSR e SSG de forma seletiva por rota, integrando a Formula One Database API com foco em performance e SEO.",
-        "techDecisions": "Next.js para escolher entre SSR e SSG por rota conforme a necessidade dos dados; Styled Components para isolamento de estilos sem conflitos globais; Bootstrap como grid responsivo sem adicionar complexidade desnecessária.",
+        "problem": "Consultar dados de temporadas de Fórmula 1 em uma interface responsiva.",
+        "solution": "Aplicação Next.js que consome uma API própria e separa dados e apresentação.",
+        "techDecisions": "Renderização por rota com Next.js; Styled Components para estilos e Bootstrap para o grid.",
         "outcome": "Aplicação publicada com carregamento otimizado, layout responsivo e separação clara entre dados e apresentação via server-side rendering.",
         "techs": [
           "Next.js",
@@ -135,9 +125,43 @@
           "TypeScript",
           "Styled Components",
           "Bootstrap"
-        ]
+        ],
+        "demoNote": ""
+      },
+      {
+        "emoji": "🏎️",
+        "name": "Formula One Database",
+        "link": "https://github.com/Adriano0106/Formula-One-Database",
+        "problem": "Fornecer dados de Fórmula 1 para uma aplicação frontend por meio de uma API própria.",
+        "solution": "REST API em Node.js e TypeScript consumida pelo Formula One Next.",
+        "techDecisions": "Express e separação entre routes, controllers e data para organizar responsabilidades.",
+        "outcome": "API em produção consumida pela aplicação Formula One Next, com baixo acoplamento entre camadas, estrutura extensível para novos dados de temporada e contratos TypeScript garantindo mudanças seguras em todos os endpoints.",
+        "techs": [
+          "Node.js",
+          "Express",
+          "TypeScript"
+        ],
+        "demoNote": ""
+      },
+      {
+        "emoji": "😎",
+        "name": "Portfólio",
+        "link": "youAreHere",
+        "problem": "Apresentar experiência profissional, projetos e decisões de engenharia em português e inglês.",
+        "solution": "Interface Next.js com componentes shadcn/ui, navegação lateral responsiva e temas claro e escuro.",
+        "techDecisions": "Tradução própria via Context API e arquivos JSON; composição com Tailwind CSS e tema via next-themes.",
+        "outcome": "Portfólio publicado com conteúdo bilíngue, cards de projetos expansíveis e componentes de interface reutilizados. O conteúdo principal é exibido após a inicialização no navegador.",
+        "techs": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "shadcn/ui"
+        ],
+        "demoNote": ""
       }
-    ]
+    ],
+    "details": "Detalhes e resultado"
   },
   "footer": {
     "developedBy": "Desenvolvido por:"

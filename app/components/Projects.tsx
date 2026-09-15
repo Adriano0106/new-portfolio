@@ -23,6 +23,7 @@ type Project = {
   solution: string
   techDecisions: string
   outcome: string
+  demoNote: string
   techs: string[]
 }
 
@@ -47,8 +48,8 @@ const Projects = ({ sidebarOpen }: ProjectProps) => {
     >
       <Title sidebarOpen={sidebarOpen}>{t("projects.title")}</Title>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
-          <Card key={index} className="w-full flex flex-col">
+        {projects.map((project) => (
+          <Card key={project.name} className="w-full min-w-0 flex flex-col">
             <CardHeader className="pb-2">
               <CardTitle className="text-lg flex items-center gap-2 flex-wrap">
                 <span>
@@ -64,7 +65,7 @@ const Projects = ({ sidebarOpen }: ProjectProps) => {
 
             <CardContent className="flex flex-col gap-3 flex-1">
               <div>
-                <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wide mb-1">
+                <p className="text-xs font-semibold text-zinc-600 dark:text-zinc-400 uppercase tracking-wide mb-1">
                   {labels.problem}
                 </p>
                 <p className="text-sm text-zinc-600 dark:text-zinc-300">
@@ -72,7 +73,7 @@ const Projects = ({ sidebarOpen }: ProjectProps) => {
                 </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wide mb-1">
+                <p className="text-xs font-semibold text-zinc-600 dark:text-zinc-400 uppercase tracking-wide mb-1">
                   {labels.solution}
                 </p>
                 <p className="text-sm text-zinc-600 dark:text-zinc-300">
@@ -80,21 +81,30 @@ const Projects = ({ sidebarOpen }: ProjectProps) => {
                 </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wide mb-1">
+                <p className="text-xs font-semibold text-zinc-600 dark:text-zinc-400 uppercase tracking-wide mb-1">
                   {labels.techDecisions}
                 </p>
                 <p className="text-sm text-zinc-600 dark:text-zinc-300">
                   {project.techDecisions}
                 </p>
               </div>
-              <div>
-                <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wide mb-1">
+              {project.demoNote && (
+                <p className="rounded-lg bg-blue-50 p-3 text-sm text-blue-900 dark:bg-blue-950 dark:text-blue-200">
+                  {project.demoNote}
+                </p>
+              )}
+              <details className="rounded-lg border border-zinc-200 p-3 dark:border-zinc-700">
+                <summary className="cursor-pointer rounded text-sm font-medium text-blue-700 dark:text-blue-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-500">
+                  {t("projects.details")}
+                  <span className="sr-only"> — {project.name}</span>
+                </summary>
+                <p className="mt-3 text-xs font-semibold text-zinc-600 dark:text-zinc-400 uppercase tracking-wide mb-1">
                   {labels.outcome}
                 </p>
                 <p className="text-sm text-zinc-600 dark:text-zinc-300">
                   {project.outcome}
                 </p>
-              </div>
+              </details>
 
               {project.techs?.length > 0 && (
                 <div className="flex flex-wrap gap-2 mt-2">
