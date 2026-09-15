@@ -1,7 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import useWindowSize from "../hooks/useWindowSize"
+import { useState } from "react"
 import Image from "next/image"
 import { Input } from "@/ui/input"
 import { Title } from "./Title"
@@ -23,25 +22,10 @@ type Job = {
 const Experience = ({ sidebarOpen }: ExperienceProps) => {
   const { t } = useI18n()
   const jobs: Job[] = t("experience.jobs") as unknown as Job[]
-  const size = useWindowSize()
-  const [isSmall, setIsSmall] = useState<boolean>(false)
-  const [showJobs, setShowJobs] = useState<Job[]>(jobs)
-
-  useEffect(() => {
-    setShowJobs(jobs)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [t])
-
-  useEffect(() => {
-    if (size.width !== undefined && size.width <= 768) {
-      setIsSmall(true)
-    } else {
-      setIsSmall(false)
-    }
-  }, [size.width])
-
-  const sharedClasses = "flex justify-between gap-x-6 py-5"
-  const conditionalClass = isSmall ? "flex-col-reverse" : ""
+  const [filter, setFilter] = useState("")
+  const showJobs = jobs.filter((job) =>
+    job.techs.some((tech) => tech.toLowerCase().includes(filter.trim().toLowerCase())),
+  )
 
   return (
     <section
@@ -51,21 +35,24 @@ const Experience = ({ sidebarOpen }: ExperienceProps) => {
     >
       <Title sidebarOpen={sidebarOpen}>{t("experience.title")}</Title>
 
+      <label htmlFor="experience-filter" className="mt-4 mb-2 block text-sm font-medium">
+        {t("experience.filterLabel")}
+      </label>
       <Input
+        id="experience-filter"
+        type="search"
+        value={filter}
         placeholder={t("experience.filter")}
-        className="mb-2 mt-4"
-        onChange={(e) => {
-          const filter = e.target.value.toLowerCase()
-          const filteredJobs = jobs.filter((job) =>
-            job.techs.some((tech) => tech.toLowerCase().includes(filter)),
-          )
-          filter === "" ? setShowJobs(jobs) : setShowJobs(filteredJobs)
-        }}
+        className="mb-2"
+        onChange={(e) => setFilter(e.target.value)}
       />
+      <p role="status" className="text-sm text-zinc-600 dark:text-zinc-400">
+        {showJobs.length === 0 ? t("experience.empty") : ""}
+      </p>
 
       <ul role="list" className="divide-y divide-zinc-100 dark:divide-zinc-800">
         {showJobs.map((job) => (
-          <li key={job.name} className={`${sharedClasses} ${conditionalClass}`}>
+          <li key={job.name} className="flex flex-col-reverse md:flex-row justify-between gap-x-6 py-5">
             <div className="flex min-w-0 gap-x-4">
               <Image
                 src={job.imageUrl}

@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useContext, useState, useCallback } from "react"
+import { createContext, useContext, useState, useCallback, useEffect } from "react"
 import pt from "../../messages/pt.json"
 import en from "../../messages/en.json"
 
@@ -19,6 +19,10 @@ const I18nContext = createContext<I18nContextProps>({} as I18nContextProps)
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocale] = useState<Locale>("pt")
+
+  useEffect(() => {
+    document.documentElement.lang = locale === "pt" ? "pt-BR" : "en"
+  }, [locale])
 
   const toggleLocale = useCallback(() => {
     setLocale((prev) => (prev === "pt" ? "en" : "pt"))

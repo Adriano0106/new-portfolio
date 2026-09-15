@@ -2,41 +2,31 @@
 
 import { useEffect, useState } from "react"
 import Experience from "./components/Experience"
-import Hobbies from "./components/Hobbie"
 import Presentation from "./components/Presentation"
 import Projects from "./components/Projects"
-import Skills from "./components/Skills"
 import EngineeringMindset from "./components/EngineeringMindset"
 import Education from "./components/Education"
-import { AppSidebar } from "./components/AppSidebar"
+import { AppSidebar, type SectionKey } from "./components/AppSidebar"
 import Footer from "./components/Footer"
 import Contact from "./components/Contact"
-import useWindowSize from "./hooks/useWindowSize"
-
-const sectionKeys = [
-  "presentation",
-  "experience",
-  "education",
-  "projects",
-  "mindset",
-  "contact",
-] as const
-
-type SectionKey = (typeof sectionKeys)[number]
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<SectionKey>("presentation")
-  const { width } = useWindowSize()
-  const isMobile = width !== undefined && width < 767
-  const [sidebarOpen, setSidebarOpen] = useState<boolean | undefined>(undefined)
+  const [isDesktop, setIsDesktop] = useState<boolean | undefined>(undefined)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
   useEffect(() => {
-    if (width !== undefined) {
-      setSidebarOpen(!isMobile)
+    const media = window.matchMedia("(min-width: 1024px)")
+    const updateLayout = () => {
+      setIsDesktop(media.matches)
+      setSidebarOpen(media.matches)
     }
-  }, [isMobile, width])
+    updateLayout()
+    media.addEventListener("change", updateLayout)
+    return () => media.removeEventListener("change", updateLayout)
+  }, [])
 
-  if (sidebarOpen === undefined) return null
+  if (isDesktop === undefined) return null
 
   const sections: Record<SectionKey, JSX.Element> = {
     presentation: <Presentation />,
@@ -54,15 +44,16 @@ export default function Home() {
         setActiveSection={setActiveSection}
         open={sidebarOpen}
         setOpen={setSidebarOpen}
+        isDesktop={isDesktop}
       />
       <div
-        className={`flex flex-col flex-1 transition-all duration-300 ${
+        className={`flex min-w-0 flex-col flex-1 transition-all duration-300 ${
           sidebarOpen ? "lg:ml-66" : ""
         }`}
       >
-        <div className="flex-1" style={{ height: "calc(100vh - 70px)" }}>
+        <main className="flex-1">
           {sections[activeSection]}
-        </div>
+        </main>
         <Footer />
       </div>
     </div>

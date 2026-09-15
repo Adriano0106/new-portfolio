@@ -74,7 +74,9 @@
           "HTML"
         ]
       }
-    ]
+    ],
+    "filterLabel": "Filtrar experiências por tecnologia",
+    "empty": "Nenhuma experiência encontrada para essa tecnologia."
   },
   "projects": {
     "title": "Projetos",
@@ -220,5 +222,15 @@
         "period": "Em andamento"
       }
     ]
+  },
+  "controls": {
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "navigation": "Navegação principal",
+    "switchLanguage": "PT-BR: mudar para inglês",
+    "lightMode": "Usar tema claro",
+    "darkMode": "Usar tema escuro",
+    "light": "Claro",
+    "dark": "Escuro"
   }
 }

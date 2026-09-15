@@ -74,7 +74,9 @@
           "HTML"
         ]
       }
-    ]
+    ],
+    "filterLabel": "Filter experience by technology",
+    "empty": "No experience found for this technology."
   },
   "projects": {
     "title": "Projects",
@@ -220,5 +222,15 @@
         "period": "In progress"
       }
     ]
+  },
+  "controls": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "navigation": "Main navigation",
+    "switchLanguage": "EN-US: switch to Portuguese",
+    "lightMode": "Use light theme",
+    "darkMode": "Use dark theme",
+    "light": "Light",
+    "dark": "Dark"
   }
 }
